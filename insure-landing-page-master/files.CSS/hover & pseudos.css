@@ -1,0 +1,193 @@
+/* =============================
+========== buttons ===============
+================================*/
+
+.squared:hover{
+    background-color: var(--clr-main-bg);
+    letter-spacing: calc(var(--letter-sp) + 3px);
+    color: var(--clr-bg-white);
+    font-weight: 700;
+}
+
+
+.welcoming button:hover{
+    background-color: var(--clr-bg-white);
+    color: var(--clr-headings);
+    font-weight: 700;
+    letter-spacing: calc(var(--letter-sp) + 3px);
+}
+
+.call-to-action-box button:hover{
+    background-color: white;
+    color: var(--clr-headings);
+    letter-spacing: calc(var(--letter-sp) + 4px);
+    font-weight: 700;
+}
+
+
+/* =============================
+========== pseudos ===============
+================================*/
+
+
+.sec-h1::before{
+    content: '';
+    background-color: var(--clr-text);
+    height: 1px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 8%;
+}
+
+.topper-footer::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: var(--clr-text-top);
+    margin-bottom: 50px;
+    position: absolute;
+    left: 0;
+    top: 70px;
+}
+
+.welcoming::before{
+    content: '';
+    background-color: var(--clr-bg-white);
+    height: 2px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 25%;
+}
+
+
+.item::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--clr-main-bg);
+    transform: scaleX(0);
+    transition: .3s;
+}
+
+.attribution .att-link1::after{
+    position: absolute;
+    transform: scaleX(0);
+    left: 0;
+    bottom: -2.5px;
+    height: 2.5px;
+    background-color: var(--clr-icons-bg);
+    content: '';
+    width: 100%;
+    transition: .7s;
+}
+
+.attribution .att-link2::after{
+    position: absolute;
+    transform: scaleX(0);
+    left: 0;
+    bottom: -2.5px;
+    height: 2.5px;
+    background-color: var(--clr-icons-bg);
+    content: '';
+    width: 100%;
+    transition: .7s;
+}
+
+/* =============================
+========== others ===============
+================================*/
+
+
+nav ul li:hover{
+    letter-spacing: calc(var(--letter-sp) + 1.7px);
+    color: var(--clr-main-bg);
+    font-weight: 700;
+}
+
+
+nav ul li:not(.squared)::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--clr-main-bg);
+    transform: scaleX(0);
+    transition: .3s;
+}
+
+nav ul li:hover::after{
+    transform: scaleX(1);
+}
+
+
+.item:hover::after{
+    transform: scaleX(1);
+}
+
+.item:hover{
+    font-weight: 700;
+    letter-spacing: calc(var(--letter-sp) + 1.7px);
+}
+
+.footer-column:nth-child(4){
+    margin-right: var(--margin-left);
+}
+
+
+.social-app:hover{
+    filter: 
+    invert(57%) 
+    sepia(45%) 
+    saturate(6367%) 
+    hue-rotate(340deg) 
+    brightness(100%) 
+    contrast(91%);
+
+    transform: scale(1.5, 1.5) translateY(-10px);
+}
+
+
+
+.attribution a:hover{
+    color: hsl(200, 82%, 44%); 
+}
+
+.attribution .att-link1:hover::after{
+    transform: scaleX(1);
+     
+}
+
+.attribution .att-link2:hover::after{
+    transform: scaleX(1);
+    
+}
+
+
+@media only screen and (max-width: 475px){
+
+    nav ul li:hover{
+        color: white;
+    }
+
+    nav ul li:hover::after{
+        background-color: white;
+    }
+
+    .topper-footer::after{
+    content: '';
+    width: 80% !important;
+    height: 1px;
+    background-color: var(--clr-text-top);
+    position: absolute;
+    left: 47.5px;
+    top: 120px !important;
+}
+
+}

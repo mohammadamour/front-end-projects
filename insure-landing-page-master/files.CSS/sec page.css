@@ -1,0 +1,100 @@
+/* =============================
+========== features ===============
+================================*/
+
+
+.features-section{
+    margin-top: 350px;
+    margin-left: var(--margin-left);
+}
+
+.features{
+    display: flex;
+
+}
+
+.sec-h1{
+    font-size: 60px;
+    color: var(--clr-headings);
+    font-family: var(--ff-headings);
+    margin-bottom: 80px;
+    font-weight: var(--fw-bold);
+    position: relative;
+}
+
+.feature{
+    max-width: 395px;
+    margin-bottom: 150px;
+}
+
+.sec-feature{
+    margin: 0 30px;
+}
+
+.feature-icon{
+    margin-bottom: 15px;
+}
+
+.feature-title{
+    font-family: var(--ff-headings);
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.feature-text{
+    color: var(--clr-text);
+}
+
+
+
+/* =============================
+========== call to action box =====
+================================*/
+
+.call-to-action-box{
+    width: calc(100% - (var(--margin-left) * 2));
+    background-color: var(--clr-main-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 110px;
+    overflow: hidden;
+    margin-left: var(--margin-left);
+    position: relative;
+}
+
+.third-h1{
+    font-family: var(--ff-headings);
+    font-size: 60px;
+    font-weight: 500;
+    color:var(--clr-bg-white);
+    max-width: 600px;
+}
+
+.call-to-action-box button{
+    border: 2px solid var(--clr-bg-white);
+    background-color: inherit;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    letter-spacing: calc( var(--letter-sp) + 1.5px);
+    padding: 11px 25px;
+    font-size: 13px;
+    z-index: 3;
+    font-weight: 600;
+}
+
+
+.bg-how-we-work-desk{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bg-how-we-work-mob{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
