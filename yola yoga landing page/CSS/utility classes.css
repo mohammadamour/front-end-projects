@@ -1,0 +1,105 @@
+/* =============================
+========== utility classes ========
+================================*/
+
+.button {
+  padding: 16px 28px;
+  background: var(--clr-orange);
+  box-shadow: 0px 24px 34px hsla(206, 52%, 26%, 0.1);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.45s;
+  border: none;
+  font-weight: 600;
+  font-size: var(--fs-p3);
+  text-align: center;
+  color: var(--clr-white);
+}
+
+.button:hover {
+  background-color: var(--clr-pinkish);
+}
+
+.nav-link {
+  font-weight: 400;
+  font-size: var(--fs-p2);
+  text-align: center;
+  color: var(--clr-text);
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  letter-spacing: 1.6px;
+  color: var(--clr-orange);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--clr-orange);
+  border-radius: 1px;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.mob,
+.mobs,
+.close {
+  display: none;
+}
+
+.hidden{
+  display: none !important;
+}
+
+/* =============================
+========== attributions ========
+================================*/
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+  transition: 0.5s;
+  color: hsl(0, 0%, 81%);
+  line-height: 2;
+}
+
+.attribution a {
+  color: hsl(22, 100%, 75%);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.attribution a::after {
+  position: absolute;
+  transform: scaleX(0);
+  left: 0;
+  bottom: -2.5px;
+  height: 2.5px;
+  background-color: white;
+  content: "";
+  width: 100%;
+  transition: 0.4s;
+}
+
+.attribution a:hover::after {
+  transform: scaleX(1);
+}
+
+.attribution a:hover {
+  color: hsl(7, 100%, 71%);
+}

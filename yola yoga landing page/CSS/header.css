@@ -1,0 +1,246 @@
+/* =============================
+========== navigation bar ========
+================================*/
+
+nav {
+  position: absolute;
+  width: calc(100vw - (var(--margin-left) * 2));
+  height: 90px;
+  left: var(--margin-left);
+  z-index: 5;
+  top: 36px;
+  background-color: var(--clr-white);
+  box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  display: flex;
+  padding: 0 32px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu ul {
+  width: 358px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 445px;
+}
+
+nav .logo {
+  width: 78px;
+  height: 30px;
+  margin-right: 70px;
+}
+
+.in {
+  font-weight: 600;
+  font-size: 16px;
+  color: hsl(0, 2%, 30%);
+  border: none;
+  cursor: pointer;
+  margin-right: 36px;
+  transition: 0.2s;
+  background: transparent;
+}
+
+.in:hover {
+  color: black;
+}
+
+.up {
+  width: 122px;
+  height: 48px;
+  background: var(--clr-whiteish);
+  border: 1px solid var(--clr-orange);
+  color: var(--clr-orange);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.up:hover {
+  background-color: var(--clr-orange);
+  color: var(--clr-pinkish);
+}
+
+.logo-menu {
+  display: none;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =============================
+========== header ========
+================================*/
+
+.big-circle {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  z-index: -3;
+}
+
+.hero-patterns {
+  position: absolute;
+  left: 17px;
+  top: 202px;
+  z-index: -3;
+}
+
+.man-sitting {
+  position: absolute;
+  width: 504px;
+  height: 744px;
+  left: 801px;
+  top: 404px;
+  z-index: -3;
+}
+
+.hero-para {
+  max-width: 515px;
+  margin: 226px 0 217px var(--margin-left);
+}
+
+h1 {
+  font-weight: 800;
+  font-size: var(--fs-h1);
+  line-height: 80px;
+  color: var(--clr-blackish);
+  margin-bottom: 22px;
+}
+
+.hero p {
+  font-weight: 400;
+  font-size: var(--fs-p1);
+  line-height: 28px;
+  color: var(--clr-text);
+  margin-bottom: 48px;
+}
+
+.hero .buttons {
+  display: flex;
+}
+
+.hero .button {
+  padding: 15px 41px;
+}
+
+.hero .learn-more {
+  margin-left: 23px;
+  width: 142px;
+  height: 58px;
+  border: 1px solid var(--clr-video-sec-bg);
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: var(--fs-p1);
+  text-align: center;
+  background: var(--clr-white);
+  color: var(--clr-blackish);
+  transition: 0.3s;
+}
+
+.hero .learn-more:hover {
+  border-color: var(--clr-blackish);
+}
+
+/* ======== green container ========*/
+
+.yoga-containers {
+  width: 100%;
+  height: 260px;
+  background-color: var(--clr-green);
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+
+.yoga-container {
+  margin-right: 32px;
+  box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  background: var(--clr-white);
+  width: 282px;
+  height: 282px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-55px);
+}
+
+.yoga-container .title {
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.yoga-container h5 {
+  max-width: 154px;
+  font-weight: 700;
+  font-size: var(--fs-h5);
+  line-height: 28px;
+  color: var(--clr-blackish);
+  margin-right: 44px;
+}
+
+.yoga-container .title p {
+  font-weight: 700;
+  font-size: var(--fs-h2);
+  line-height: 60px;
+  text-align: right;
+  color: var(--clr-greyish);
+}
+
+.yoga-container img {
+  width: 230px;
+  height: 118px;
+  border-radius: 6px;
+}
+
+/* ==== third yoga container ==== */
+
+.third-yoga-container {
+  background-color: var(--clr-pink-container);
+  display: flex;
+  flex-direction: row;
+  margin-right: 0;
+  width: 542px;
+  height: 282px;
+}
+
+.third-yoga-container .text {
+  margin-right: 79px;
+}
+
+.third-yoga-container .title p {
+  color: var(--clr-pinkish);
+}
+
+.yoga-text {
+  font-weight: 400;
+  font-size: var(--fs-p2) !important;
+  line-height: 26px !important;
+  color: var(--clr-text);
+  margin: 32px 0 12px 0;
+}
+
+.third-yoga-container a {
+  font-weight: 600;
+  font-size: var(--fs-p3);
+  color: var(--clr-blackish);
+}
+
+.third-yoga-container img {
+  width: 170px;
+  height: 230px;
+}

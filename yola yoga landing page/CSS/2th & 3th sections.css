@@ -1,0 +1,143 @@
+/* =============================
+========== second section ========
+================================*/
+
+.sec-sec {
+  margin: 150px var(--margin-left) 350px var(--margin-left);
+  display: flex;
+  align-items: center;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 552px;
+  margin-right: 157px;
+  height: 423px;
+}
+
+.stats .container {
+  max-width: 241px;
+  margin: 35px 17.5px;
+}
+
+.stats .container h2 {
+  font-weight: 700;
+  font-size: var(--fs-h2);
+  color: var(--clr-blackish);
+  margin-bottom: 16px;
+}
+
+.stats .container h6 {
+  font-weight: 700;
+  font-size: var(--fs-h6);
+  margin-bottom: 10px;
+  color: var(--clr-blackish);
+}
+
+.stats .container p {
+  font-weight: 400;
+  font-size: var(--fs-p2);
+  line-height: 26px;
+  color: var(--clr-text);
+}
+
+.sec-sec .heading {
+  width: 461px;
+}
+
+.sec-sec .heading h2 {
+  font-weight: 700;
+  font-size: var(--fs-h2);
+  line-height: 60px;
+  color: var(--clr-blackish);
+  margin-bottom: 48px;
+}
+
+.signature .sign {
+  font-family: var(--ff-weird);
+  font-weight: 400;
+  font-size: var(--fs-weird);
+  color: var(--clr-orange);
+  margin-bottom: 4px;
+}
+
+.signature .name {
+  color: var(--clr-blackish);
+  font-size: var(--fs-p2);
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.founder {
+  color: var(--clr-text);
+  font-size: var(--fs-p3);
+}
+
+.sec-sec .bg {
+  position: absolute;
+  left: 1194px;
+  top: 1597px;
+}
+
+/* =============================
+========== third section ========
+================================*/
+
+.third-sec {
+  height: 864px;
+  background-color: var(--clr-whiteish);
+  width: 100%;
+  padding: 0 var(--margin-left) 150px var(--margin-left);
+}
+
+.video iframe {
+  border-radius: 16px;
+  height: 622px;
+  width: calc(100vw - 270px);
+  margin: -150px auto 78px 0;
+}
+
+.third-sec .para {
+  display: flex;
+  margin-bottom: -150px;
+}
+
+.third-sec .para h2 {
+  font-weight: 700;
+  font-size: var(--fs-h2);
+  line-height: 60px;
+  color: var(--clr-blackish);
+  margin-right: 146px;
+  position: relative;
+  max-width: 440px;
+}
+
+.third-sec .para h2::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  left: 0;
+  top: -22px;
+  background: var(--clr-orange);
+  border-radius: 1px;
+}
+
+.third-sec .para .text p {
+  max-width: 359px;
+  font-weight: 400;
+  font-size: var(--fs-p2);
+  line-height: 26px;
+  color: var(--clr-text);
+  margin-bottom: 38px;
+}
+
+.third-sec .pattern {
+  position: absolute;
+  width: 1375.06px;
+  height: 258.06px;
+  left: 32px;
+  top: 2531px;
+  z-index: -3;
+}

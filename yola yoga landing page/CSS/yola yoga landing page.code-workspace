@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../random country picker"
+		},
+		{
+			"path": "../../country guesser"
+		},
+		{
+			"path": "../../utilities"
+		},
+		{
+			"path": "../../quran landing page"
+		},
+		{
+			"path": "../../Manipulable containers"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "yola yoga landing page"
+	}
+}
