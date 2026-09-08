@@ -1,0 +1,61 @@
+/*  ==============================
+==================================
+   testomonial section
+==================================
+============================ */
+
+
+
+
+.test-section{
+    text-align: center;
+    display: grid;
+    place-items: center;
+    padding: 150px 110px;
+}
+
+.spaced{
+    font-family: var(--ff-head);
+    letter-spacing: 8px;
+    color: var(--clr-head-test);
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.testomonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.testomonial{
+    max-width: 360px;
+    color: var(--clr-text);
+    line-height: var(--lh);
+    font-weight: 700;
+}
+
+.testomonial img{
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.bottom-test{
+    margin-top: 50px;
+}
+
+.role{
+    color: var(--clr-role);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.name{
+    color: var(--clr-test-name);
+    font-weight: 900;
+    font-size: 18px;
+    font-family: var(--ff-head);
+}

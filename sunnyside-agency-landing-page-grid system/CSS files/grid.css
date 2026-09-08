@@ -1,0 +1,155 @@
+/* =======================
+   =======================
+   =======================
+        grid squars
+   =======================
+   =======================
+   =======================*/
+
+
+
+
+
+
+
+
+.six-squares-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.row img{
+    margin: 0;
+    width: 100%;
+}
+
+/*the heading inside the blocks that contian text  */
+h2{
+    line-height: 1.8;
+    font-size: 33px;
+    color: var(--clr-test-name);
+    font-family: var(--ff-head);
+    font-weight: 900;
+}
+
+.inner-text{
+    line-height: var(--lh);
+    color: var(--clr-text);
+    max-width: 410px;
+}
+
+
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+ /* ======================================= */
+/*      learn more in the text squares */
+/* =======================================*/
+
+
+
+/* learn for more */
+h4{
+    font-family: var(--ff-head);
+    color: var(--clr-test-name);
+    font-weight: 900;
+    position: relative;
+    cursor: pointer;
+    margin-top: 50px;
+    z-index: 2;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+h4::after{
+    content: '';
+    height: 7px;
+    border-radius: 10px;
+    width: 150px;
+    position: absolute;
+    left: -10px;
+    top: 19px;
+    transition: .2s;
+    z-index: -2;
+}
+
+/* the lines behind the learn for more button */
+.first-row-sec-page h4::after{
+    background-color: var(--clr-first-lm);
+}
+
+.first-row-sec-page h4:hover::after{
+    background-color: var(--clr-first-lm-hover);
+}
+
+.sec-row-sec-page h4::after{
+    background-color: var(--clr-sec-lm);
+}
+
+.sec-row-sec-page h4:hover::after{
+    background-color: var(--clr-sec-lm-hover);
+}
+
+
+
+
+
+/*  =====================
+ ===================== 
+    images with text
+ =====================
+ ===================== */
+
+
+
+.cherry{
+    position: relative;
+}
+
+.cherry .inner-text{
+    color: var(--clr-cherry);
+}
+
+.orange{
+    position: relative;
+}
+
+.orange .inner-text{
+    color: var(--clr-orange-text);
+}
+
+.third-row-sec-page .inner-text{
+    text-align: center;
+    line-height: var(--lh);
+    position: absolute;
+    top: 395px;
+    max-width: 370px;
+    font-weight: 700;
+}
+
+.third-row-sec-page .text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.third-row-sec-page h3{
+    font-family: var(--ff-head);
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,82 @@
+/* =====================
+          navbar 
+ =======================*/
+
+
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 55px 50px;
+}
+
+.header-bg{
+    height: 677px;
+    width: 100%;
+}
+
+.ham{
+    display: none;
+    cursor: pointer;
+}
+.close{
+    display: none;
+}
+
+.top-logo{
+    height: 30px;
+    color: var(--clr-white);
+}
+/* the ancher tages inside the lis that are inside the ul that is inside the navbar */
+nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--clr-white);
+    margin: 0 7.5px;
+    padding: 5px;
+}
+
+nav ul li{
+    border-radius: 40px;
+    cursor: pointer;
+    
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li:hover{
+    background-color: var(--clr-footer-bg);
+}
+
+
+h1{
+    font-size: 55px;
+    letter-spacing: 8px;
+    margin-top: 60px;
+    color: var(--clr-white);
+    text-transform: uppercase;
+    position: absolute;
+    top: 80px;
+    left: 27%;
+    font-family: var(--ff-head);
+    font-weight: 900;
+}
+
+
+.burger{
+    display: none;
+}
+
+.mob{
+    display: none;
+}

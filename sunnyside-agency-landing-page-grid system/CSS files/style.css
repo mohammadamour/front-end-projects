@@ -1,0 +1,118 @@
+@import "front page.css";
+@import "grid.css";
+@import "testomonial.css";
+@import "footer.css";
+@import "queries.css";
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+
+
+
+:root{
+    /* primary  */
+    
+    /* lm is a shorthand for learn for more in the second section*/
+    --clr-sec-lm: hsl(6, 100%, 90%);
+    --clr-sec-lm-hover: hsl(7, 99%, 70%);
+    --clr-first-lm: hsl(51, 100%, 79%);
+    --clr-first-lm-hover: hsl(51, 100%, 49%);
+    --clr-footer-items: hsl(167, 40%, 24%);
+    --clr-orange-text: hsl(198, 62%, 26%);
+    --clr-cherry: hsl(168, 34%, 41%);
+    --clr-footer-bg: hsl(168deg 49% 75%);
+
+    /* neutral */
+
+    /* test is a shorthand for testomonial */
+    --clr-test-name: hsl(212, 27%, 19%);
+    --clr-text: hsl(213, 9%, 39%);
+    --clr-head-test: hsl(232, 10%, 55%);
+    --clr-role: hsl(210, 4%, 67%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    --fs: 18px;
+
+    /* the font family for most of the text in the website except */
+    --ff-body: 'Barlow', sans-serif;
+    /* the font famliy of the headings and the names of the testomonials */
+    --ff-head: 'Fraunces', serif;
+
+    /* line height */
+    --lh: 1.7;
+}
+
+
+body{
+    font-family: var(--ff-body);
+    font-size: var(--fs);
+}
+
+
+
+.attribution {
+    font-size: 16px; 
+    text-align: center; 
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    transition: .5s;
+    color: hsla(0, 0%, 54%, 0.523);
+    line-height: 2;
+}
+
+.attribution a {
+    color: hsla(200, 74%, 45%, 0.726); 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.attribution .att-link1::after{
+    position: absolute;
+    transform: scaleX(0);
+    left: 0;
+    bottom: -2.5px;
+    height: 2.5px;
+    background-color: white;
+    content: '';
+    width: 100%;
+    transition: .7s;
+}
+
+.attribution .att-link2::after{
+    position: absolute;
+    transform: scaleX(0);
+    left: 0;
+    bottom: -2.5px;
+    height: 2.5px;
+    background-color: white;
+    content: '';
+    width: 100%;
+    transition: .7s;
+}
+
+.attribution a:hover{
+    color: hsl(200, 82%, 44%); 
+}
+
+.attribution .att-link1:hover::after{
+    transform: scaleX(1);
+     
+}
+
+.attribution .att-link2:hover::after{
+    transform: scaleX(1);
+    
+}
