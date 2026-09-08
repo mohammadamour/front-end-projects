@@ -1,0 +1,196 @@
+/* ===============================
+    === media fucking queries ====
+   =============================== */
+
+
+
+@media only screen and (max-width: 475px){
+
+
+    :root{
+        --margin-left: 0px !important;
+    }
+
+    nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    nav ul{
+        position: absolute;
+        top: 120px;
+        left: 20px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 12px;
+        min-width: 375px;
+        min-height: 325px;
+        box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+       -webkit-box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+        -moz-box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+        padding: 20px;
+        font-weight: var(--fw-normal);
+        transition: .5s ease-in-out;
+        transform: scale(0, 0) translate(-400px, -400px);
+    }
+
+    .menu{
+        transform: scale(1, 1) translate(0px, 0px);
+    }
+
+    nav ul li{
+        color: hsl(240, 2%, 23%);
+        font-weight: var(--fw-normal);
+        margin: 7.5px 0;
+    }
+
+    nav button{
+        display: none;
+    }
+
+    .ham{
+        display: block;
+        cursor: pointer;
+        transition: .5s;
+        margin-right: 40px;
+    }
+
+    .close{
+        cursor: pointer;
+        transition: .5s;
+        margin-right: 40px;
+    }
+
+    .bg-mob{
+        display: block;
+        height: 500px;
+    }
+
+    .bg-desk{
+        display: none;
+    }
+    
+    .phones{
+        height: 500px;
+        transform: translate(0);
+    }
+
+    .front-page{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .welcoming{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 525px;
+    }
+
+    .welcoming p{
+        max-width: 390px;
+    }
+
+
+    .sec-page{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .features-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 15px;
+    }
+
+    .feature{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature .text{
+        max-width: 50rem;
+    }
+
+    .third-page{
+        align-items: center !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articals{
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center;
+    }
+
+    .artical{
+        margin-bottom: 40px;
+    }
+
+    footer{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+
+    footer ul{
+        margin: 30px 0 30px 0;
+        flex-direction: column;
+        }
+
+    .block-li1,
+    .block-li2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    footer .logo{
+        height: 25px;
+        margin: 0 auto;
+        padding-left: 50px;
+        width: 117px;
+    }
+
+    .social{
+        display: block;
+        margin: 20px 0 10px 70px;
+    }
+
+
+    .block3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: auto;
+        position: static;
+    }
+
+    .block3 button{
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+
+    .attribution{
+        text-align: center !important;
+    }
+}

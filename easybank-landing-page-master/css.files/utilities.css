@@ -1,0 +1,88 @@
+@import "front page.css";
+@import "sec page.css";
+@import "third page.css";
+@import "footer.css";
+@import "queries.css";
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+:root{
+    /* primary colors */
+    --clr-footer: hsl(233, 26%, 24%);
+    --clr-green: hsl(136, 65%, 51%);
+    --clr-green-hover: hsl(136, 100%, 75%);
+    --clr-blue: hsl(192, 70%, 51%);
+    --clr-blue-hover: hsl(192, 84%, 76%);
+
+    --clr-blue-green-hover: #ade1ce;
+
+    /*neutral colors  */
+    --clr-text: hsl(233, 8%, 62%);
+    --clr-sec-bg: hsl(220, 16%, 96%);
+    --clr-main-bgs: hsl(0, 0%, 98%);
+    --clr-black: hsl(0, 0%, 0%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    /* font weights */
+    --fw-thin: 300;
+    --fw-normal: 400;
+    --fw-bold: 700;
+
+    /* font size/ line height/ other things */
+    --lh: 1.6;
+    --fs: 16px;
+    --margin-left: 150px;
+}
+
+
+body{
+    font-size: var(--fs);
+    font-family: 'Public Sans', sans-serif;
+    min-height: 100vh;
+    color: var(--clr-text);
+    line-height: var(--lh);
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    margin-top: 20px;
+    font-size: 14px; 
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: .5s;
+    color: rgba(137, 137, 137, 0.523);
+    text-align: right;
+}
+.attribution a {
+    color: hsla(200, 74%, 45%, 0.726); 
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.attribution a:hover{
+    color: hsl(200, 82%, 44%); 
+}

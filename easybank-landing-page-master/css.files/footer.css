@@ -1,0 +1,92 @@
+:root{
+    /* primary colors */
+    --clr-footer: hsl(233, 26%, 24%);
+    --clr-green: hsl(136, 65%, 51%);
+    --clr-green-hover: hsl(136, 85%, 62%);
+    --clr-blue: hsl(192, 70%, 51%);
+    --clr-blue-hover: hsl(192, 91%, 69%);
+
+    /*neutral colors  */
+    --clr-text: hsl(233, 8%, 62%);
+    --clr-sec-bg: hsl(220, 16%, 96%);
+    --clr-main-bgs: hsl(0, 0%, 98%);
+    --clr-black: hsl(0, 0%, 0%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    --fw-thin: 300;
+    --fw-normal: 400;
+    --fw-bold: 700;
+
+    --lh: 1.7;
+
+    --fs: 18px;
+    --margin-left: 120px;
+
+}
+
+footer{
+    background-color: var(--clr-footer);
+    padding: 70px;
+    display: flex;
+    position: relative;
+}
+
+.block1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: calc(var(--margin-left) - 70px);
+}
+
+.social{
+    display: flex;
+}
+
+.social img{
+    cursor: pointer;
+    transition: .5s;
+    margin: 0 5px;
+}
+
+footer ul{
+    display: flex;
+    margin: 0 150px;
+}
+
+footer ul li{
+    margin: 7.5px 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+footer ul li:hover{
+    filter: invert(92%) sepia(15%) saturate(497%) hue-rotate(99deg) brightness(92%) contrast(92%);
+}
+
+.social img:hover{
+    filter: invert(42%) sepia(75%) saturate(197%) hue-rotate(399deg) brightness(95%) contrast(82%);
+}
+
+.block-li1{
+    margin-right: 110px;
+}
+
+
+/* i have no fucking clue what the fuck is this */
+footer .logo{
+     filter: invert(97%) 
+     sepia(97%) 
+     saturate(10%) 
+     hue-rotate(197deg) 
+     brightness(99%) 
+     contrast(111%);
+}
+
+.block3{
+  position: absolute;
+  right: var(--margin-left);
+}
+
+.block3 button{
+    margin-left: 120px;
+}

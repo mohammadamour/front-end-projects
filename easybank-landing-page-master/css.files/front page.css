@@ -1,0 +1,151 @@
+/* =========================
+    navbar and its utilities 
+   ========================= */
+
+
+
+nav{
+    background-color: var(--clr-white);
+    height: 40px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+nav .logo{
+    margin-left: var(--margin-left);
+    height: 25px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    cursor: pointer;
+    margin: 0 10px;
+    font-weight: var(--fw-thin);
+    position: relative;
+    transition: .5s;
+    font-weight: var(--fw-normal);
+}
+
+nav ul li:hover{
+    color: var(--clr-black);
+}
+
+nav ul li::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(to right,  
+    var(--clr-green) 
+    ,var(--clr-blue) );
+    border-radius: 20px;
+    left: 0;
+    top: 50px;
+    z-index: 5;
+    transform: scaleX(0);
+    transition: .5s;
+}
+
+
+nav ul li:hover::after{
+    transform: scaleX(1);
+}
+
+
+button{
+    padding: 13px 35px;
+    color: var(--clr-white);
+    border-radius: 50px;
+    border: none;
+    font-weight: var(--fw-normal);
+    cursor: pointer;
+    background: linear-gradient(to right,  
+    var(--clr-green) 
+    ,var(--clr-blue));
+    font-weight: var(--fw-bold);
+}
+
+button:hover{
+    background: linear-gradient(to right,  
+    var(--clr-green-hover) 
+    ,var(--clr-blue-hover));
+}
+
+
+nav button{
+    margin-right: var(--margin-left);
+}
+
+
+.ham{
+    display: none;
+}
+
+.close{
+    display: none;
+}
+
+
+
+/* =========================
+    ======= front page =====
+   ========================= */
+
+
+.front-page{
+    min-height: 730px;
+    background-color: var(--clr-main-bgs);
+    overflow-x: hidden;
+}
+
+
+
+.bg-mob{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bg-desk{
+    position: absolute;
+    z-index: 1;
+    transform: translate(100px, -100px);
+    top: 0;
+    right: 0;
+    height: 800px;
+}
+
+.phones{
+    position: absolute;
+    transform: translate(50px, -100px);
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.welcoming{
+    margin: 125px 0  200px var(--margin-left);
+}
+
+
+h1{
+    font-size: 45px;
+    font-weight: var(--fw-thin);
+    margin-bottom: 15px;
+    color: var(--clr-black);
+}
+
+.welcoming p{
+    font-weight: var(--fw-normal);
+    margin-bottom: 20px;
+    max-width: 400px;
+}
