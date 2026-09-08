@@ -1,0 +1,156 @@
+
+/* 
+=========================================
+========== call to action box ============
+==========================================
+*/
+
+
+
+.action-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px var(--margin-left);
+    background-color: var(--clr-orange);
+    width: 100%;
+    position: relative;
+    margin-top: 120px;
+}
+
+.action-box h2{
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+    max-width: 530px;
+}
+
+.action-box .bg{
+    position: absolute;
+}
+
+.action-box button{
+    background-color: white;
+    cursor: pointer;
+    color: var(--clr-orange);
+    transition: .3s;
+    z-index: 3;
+}
+
+.bg-action-desk{
+    transform: translate(70px, -70px);
+    z-index: 1;
+}
+
+
+
+/* 
+=========================================
+========== footer =======================
+==========================================
+*/
+
+
+footer{
+    background-color: var(--clr-headings);
+    width: 100%;
+    padding: 70px var(--margin-left);
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 250px;
+}
+
+.left-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-footer .logo{
+    filter: invert(100%) 
+    sepia(0%) 
+    saturate(0%) 
+    hue-rotate(307deg)
+    brightness(103%) 
+    contrast(101%);
+}
+
+.social img{
+    transition: .5s;
+    margin: 0 3.5px;
+    cursor: pointer;
+}
+
+.footer-list{
+    display: grid;
+    gap: 12px;
+}
+
+.footer-item{
+    color: var(--clr-white);
+    font-weight: 400;
+}
+
+footer ul{
+    margin: auto 0;
+}
+
+footer ul li a{
+    cursor: pointer;
+    transition: .3s;
+}
+
+.input-attr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input{
+    border-radius: 40px;
+    padding: 12px 20px 12px 12px;
+    border: none;
+    color: var(--clr-text);
+    margin-bottom: 20px;
+}
+
+::placeholder{
+    color: var(--clr-text);
+}
+
+.email{
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+form button{
+    background-color: var(--clr-orange);
+    border-radius: 50%;
+    padding: 21px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.error{
+    color: rgb(233, 79, 79);
+    font-size: 9px;
+    position: absolute;
+    top: 45px;
+    left: 20px;
+
+}

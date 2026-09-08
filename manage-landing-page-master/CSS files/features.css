@@ -1,0 +1,128 @@
+:root{
+
+    /* primary colors */
+    --clr-orange: hsl(12, 88%, 59%);
+    --clr-footer: hsl(228, 39%, 23%);
+
+    /* netural colors */
+    --clr-text: hsl(227, 12%, 61%);
+    --clr-heading: hsl(233, 12%, 13%);
+    --clr-white: hsl(13, 100%, 96%);
+    --clr-white: hsl(0, 0%, 98%);
+
+    --margin-left: 120px;
+}
+
+
+
+
+.features-section{
+    display: flex;
+    position: relative;
+    padding: 60px var(--margin-left) 40px var(--margin-left);
+}
+
+.bg-features{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-400px, 400px);
+
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+}
+
+.features-main-text{
+    line-height: 1.7;
+    max-width: 370px;
+    margin-right: 50px;
+    color: var(--clr-text);
+}
+
+.features-intro{
+    margin-right: 50px;
+}
+
+.features-intro h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--clr-footer);
+    margin-bottom: 20px;
+}
+
+
+.features-main-text p{
+    color: var(--clr-text);
+    max-width: 400px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+/* .num{
+    color: var(--clr-white);
+    background-color: var(--clr-orange);
+    padding: 10px;
+    border-radius: 40px;
+    position: relative;
+    right: 30px;
+    font-weight: 700;
+    width: 60px;
+} */
+
+
+.feature{
+    margin-bottom: 40px;
+    line-height: 1.7;
+    max-width: 450px;
+}
+
+.heading{
+    color: var(--clr-footer);
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.7;
+    font-weight: 700;
+    position: relative;
+}
+
+.heading::before{
+    content: '';
+    color: var(--clr-white);
+    background-color: var(--clr-orange);
+    padding: 7px 23px;
+    border-radius: 40px;
+    position: absolute;
+    left: -100px;
+    top: 0;
+    font-weight: 700;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.heading-1::before{
+    content: '01';
+}
+
+.heading-2::before{
+    content: '02';
+}
+
+.heading-3::before{
+    content: '03';
+}
+
+.feature-text{
+    color: var(--clr-text);
+    font-weight: 400;
+}
+
+
+.features-bg-container{
+    position: relative;
+}
