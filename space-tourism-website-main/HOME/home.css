@@ -1,0 +1,103 @@
+@import "../important.css";
+@import "../z css files/utility classes.css";
+@import "../z css files/utility queries.css";
+@import "../z css files/psudoes.css";
+@import "queries.css";
+
+.main-section{
+    background-image: 
+    url("../assets/home/background-home-desktop.jpg");
+    min-height: 140vh;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.welcoming{
+    position: absolute;
+    width: 450px;
+    height: 382px;
+    left: 165px;
+    top: 330px;
+}
+
+
+h1{
+    font-size: var(--fs-big-ass-fonts);
+    font-family: var(--ff-headings);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 172px;
+    color: var(--clr-white);
+    text-transform: uppercase;
+}
+
+
+.buttons{
+    position: relative;
+}
+
+
+.main-button{
+    position: absolute;
+    width: 274px;
+    height: 274px;
+    left: 1001px;
+    top: 350px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    font-family: var(--ff-headings);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-crew-role);
+    line-height: 37px;
+    text-transform: uppercase;
+    background-color: var(--clr-white);
+    letter-spacing: 2px;
+    z-index: 99;
+    color: var(--clr-dark);
+}
+
+.behinded-button{
+    position: absolute;
+    border-radius: 50%;
+    border: none;
+    width: 274px;
+    height: 274px;
+    left: 1001px;
+    top: 350px;
+    background-color: var(--clr-white);
+    opacity: 0.1;
+    transition: .6s ease-in-out;
+    cursor: pointer;
+}
+
+
+/* so you want to travel to space */
+
+.so-you{
+    font-family: var(--ff-title);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-title);
+    line-height: 34px;
+    letter-spacing: var(--let-spce);
+    color: var(--clr-light);
+    text-transform: uppercase;
+}
+
+
+
+
+
+.attribution{
+    position: absolute;
+    bottom: -27%;
+}

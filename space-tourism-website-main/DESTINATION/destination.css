@@ -1,0 +1,128 @@
+@import "../important.css";
+@import "../z css files/utility queries.css";
+@import "../z css files/utility classes.css";
+@import "../z css files/psudoes.css";
+@import "queries.css";
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+.planets-section{
+    background-image: 
+    url("../assets/destination/background-destination-desktop.jpg") !important;
+    min-height: 170vh;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.planet-img{
+    position: absolute;
+    width: 445px;
+    height: 445px;
+    left: 230px;
+    top: 343px
+}
+
+
+.planets-nav{
+    display: flex;
+    align-items: center;
+}
+
+
+.info-group-planets{
+    position: absolute;
+    width: 445px;
+    height: 472px;
+    left: 832px;
+    top: 310px;
+}
+
+.planet-item{
+    font-family: var(--ff-title);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-planets-name);
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: var(--clr-light);
+    text-transform: uppercase;
+    margin-right: 35.5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.sec-hr{
+    position: absolute;
+    left: 0.22%;
+    right: 0%;
+    top: 80.93%;
+    bottom: 18.86%;
+    height: 1px;
+    width: 404px;
+    background-color: var(--clr-white);
+    opacity: .25;
+}
+
+
+.bottom-info{
+    display: flex;
+    margin-top: 90px;
+}
+
+.distance{
+    margin-right: 79px;
+}
+
+.value-distance,
+.value-time{
+    font-family: var(--ff-headings);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-title);
+    line-height: 32px;
+    text-transform: uppercase;
+    color: var(--clr-white);
+}
+
+
+.head-time,
+.head-distance{
+    font-family: var(--ff-title);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-bottom-info);
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    color: var(--clr-light);
+    margin-bottom: 12px;
+}
+
+
+.current-planet{
+    position: relative;
+}
+
+
+.planet-data{
+    display: none;
+}
+
+
+
+
+.attribution{
+    position: absolute;
+    bottom: -33%;
+}

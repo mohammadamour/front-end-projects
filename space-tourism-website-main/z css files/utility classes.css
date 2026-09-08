@@ -1,0 +1,274 @@
+:root {
+    /* colors */
+    --clr-dark: hsl(230 35% 7%);
+    --clr-light: hsl(231 77% 90%);
+    --clr-white: hsl(0 0% 100%);
+    
+    /* font-sizes */
+    --fs-big-ass-fonts: 9.375rem;
+    --fs-planet: 6.25rem;
+    --fs-tech: 3.5rem;
+    --fs-crew-role: 2rem;
+    --fs-title: 1.75rem;
+    --fs-body-text: 1.125rem;
+    --fs-planet-name: 1rem;
+    --fs-bottom-info: 0.875rem;
+    
+    /* font-families */
+    --ff-headings: "Bellefair", serif;
+    --ff-title: "Barlow Condensed", sans-serif;
+    --ff-body: "Barlow", sans-serif;
+
+    --let-spce: 4.72px;
+
+    --screen-width: 400px;
+
+}
+
+
+
+/* =============================
+========== attributions ========
+================================*/
+
+
+
+
+
+
+.attribution {
+    font-size: 16px; 
+    text-align: center; 
+    position: absolute;
+    bottom: -25%;
+    left: 40%;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    transition: .5s;
+    color: var(--clr-dark);
+    line-height: 2;
+    font-family: var(--ff-body);
+    min-width: 300px;
+}
+
+.attribution a {
+    color: var(--clr-light); 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: var(--let-spce);
+    transition: .5s;
+    position: relative;
+    font-family: var(--ff-title);
+    cursor: pointer;
+}
+
+
+
+
+/* =============================
+========== navigation bar ========
+================================*/
+
+nav{
+   position: absolute;
+   width: calc(100% - 55px);
+   height: 96px;
+   left: 55px;
+   top: 40px;
+   z-index: 90;
+}
+
+
+nav ul{
+    position: absolute;
+    width: 830px;
+    height: 96px;
+    right: 0px;
+    top: 40px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 167px 0 123px;
+}
+
+.logo{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 55px;
+    top: 64px;
+}
+
+/* the hr next to the navbar */
+.hr{
+    position: absolute;
+    width: calc(473px + 55px);
+    height: 1px;
+    left: 167px;
+    top: 88px;
+    z-index: 199;
+    background-color: var(--clr-white);
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+nav ul li a,
+.nav-item .num,
+.current-section .num{
+    font-family: var(--ff-title);
+    font-style: normal;
+    font-size: var(--fs-planet-name);
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: var(--clr-white);
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.nav-item{
+    position: relative;
+    cursor: pointer;
+    z-index: 100;
+}
+
+nav ul li{
+    position: relative;
+    list-style: none;
+}
+
+nav ul li a .item{
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 5px;
+}
+
+.current-section::after{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background-color: var(--clr-white);
+}
+
+.nav-item .num{
+    font-weight: 700;
+}
+
+.mob{
+    display: none;
+}
+
+.phone-utilities{
+    position: absolute;
+    width: 24px;
+    height: 21px;
+    left: 327px;
+    top: 33px;
+}
+
+.ham,
+.close{
+    cursor: pointer;
+}
+
+
+.translated{
+    transform: translateX(-115px) !important;
+}
+
+.block{
+    display: block !important;
+}
+
+
+/* =============================
+========== utility classes ========
+================================*/
+
+
+
+
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: var(--clr-white);
+  transition: width 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.nav-item:hover::after,
+.nav-item:focus::after {
+  width: 100%;
+}
+
+
+/* =============================
+========== main body text ========
+================================*/
+
+
+/* typical body text */
+
+p{
+    font-family: var(--ff-body);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-body-text);
+    line-height: 32px;
+    color: hsla(231, 79%, 90%, 1);
+    max-width: 460px;
+}
+
+
+.title{
+    position: absolute;
+    width: 382px;
+    height: 34px;
+    left: 166.5px;
+    top: 212px;
+    font-family: var(--ff-title);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-title);
+    line-height: 34px;
+    letter-spacing: var(--let-spce);
+    text-transform: uppercase;
+    color: var(--clr-white);
+}
+
+
+.title-num{
+    font-weight: 700;
+    letter-spacing: var(--let-spce);
+    color: var(--clr-white);
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+
+.planet-name{
+    font-family: var(--ff-headings);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-planet);
+    line-height: 115px;
+    color: var(--clr-white);
+    text-transform: uppercase;
+    margin-top: 61px;
+}

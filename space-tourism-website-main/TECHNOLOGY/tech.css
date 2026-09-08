@@ -1,0 +1,179 @@
+@import "../important.css";
+@import "../z css files/utility queries.css";
+@import "../z css files/utility classes.css";
+@import "../z css files/psudoes.css";
+@import "queries.css";
+
+body{
+    overflow-x: hidden;
+}
+
+
+.tech-section{
+    background-image: 
+    url("../assets/technology/background-technology-desktop.jpg");
+    min-height: 130vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tech-data{
+    display: none;
+}
+
+.mob{
+    display: none;
+}
+
+.tab{
+    display: none;
+}
+
+.title{
+    position: absolute;
+    width: 305px;
+    height: 34px;
+    left: 166.5px;
+    top: 212px;
+    font-family: var(--ff-title);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-title); 
+    line-height: 34px;
+    letter-spacing: var(--let-spce);
+    color: var(--clr-white);
+}
+
+
+.title .num{
+    font-weight: 700;
+    mix-blend-mode: normal;
+    opacity: 0.25
+}
+
+
+.numbering{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 165px;
+    top: 383px;
+    display: flex;
+    flex-direction: column;
+}
+
+.number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--clr-white-br);
+    margin-bottom: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 22px;
+    background-color: transparent;
+    transition: .5s;
+}
+
+
+.inner-num{
+    font-family: var(--ff-headings);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-crew-role);
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: var(--clr-white);
+}
+
+.current-circle{
+    background-color: var(--clr-white);
+}
+
+.current-circle .inner-num{
+    color: var(--clr-dark);
+}
+
+.term{
+    font-family: var(--ff-title);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-planets-name);
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: var(--clr-light);
+    position: absolute;
+    left: 0%;
+    right: 68.09%;
+    top: calc(50% - 19px/2 - 142px);
+    text-transform: uppercase;
+    min-width: 1000000px;
+}
+
+.text-group{
+    position: absolute;
+    width: 470px;
+    height: 303px;
+    left: 325px;
+    top: 383px;
+}
+
+.default-name{
+    position: absolute;
+    height: 64px;
+    left: 0%;
+    right: 0%;
+    top: calc(50% - 64px/2 - 89.5px);
+    font-family: var(--ff-headings);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-tech);
+    line-height: 64px;
+    text-transform: uppercase;
+    color: var(--clr-white);
+}
+
+.default-desc{
+    position: absolute;
+    height: 192px;
+    left: 0%;
+    right: 5.53%;
+    top: calc(50% - 192px/2 + 55.5px);
+    font-family: var(--ff-body);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-body-text);
+    line-height: 32px;
+    color: var(--clr-light);
+}
+
+.default-img-desk{
+    position: absolute;
+    width: 515px;
+    height: 527px;
+    left: 925px;
+    top: 272px;
+} 
+
+.default-img-tab{
+    position: absolute;
+    width: 768px;
+    height: 310px;
+    left: 0px;
+    top: 220px;
+}
+
+.default-img-mob{
+    position: absolute;
+    width: 375px;
+    height: 170px;
+    left: 0px;
+    top: 139px;
+}

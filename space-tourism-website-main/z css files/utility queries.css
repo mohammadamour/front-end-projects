@@ -1,0 +1,135 @@
+@media only screen and (max-width: 800px){
+    nav{
+        position: absolute;
+        width: 729px !important;
+        height: 96px !important;
+        left: -39px !important;
+        top: 0px !important;
+    }
+
+    .logo{
+        position: absolute;
+        width: 48px !important;
+        height: 48px !important;
+        left: 80px !important;
+        top: 24px !important;
+    }
+
+
+    nav ul{
+        position: absolute;
+        width: 450px !important;
+        height: 96px !important;
+        padding: 0 48px 0 39px !important;
+        left: 318px !important;
+        top: 0px !important;
+    }
+
+    .hr{
+        display: none;
+    }
+
+    nav ul li a .item{
+        font-size: var(--fs-bottom-info) !important;
+        line-height: 17px !important;
+        letter-spacing: 2.3625px !important;
+    }
+
+
+    .current-section::after{
+        position: absolute !important;
+        bottom: -35px !important;
+    }
+
+    .nav-item .num,
+    .current-section .num{
+        display: none !important;
+    }
+
+    p{
+        font-size: var(--fs-planet-name) !important;
+        max-width: 450px !important;
+        line-height: 28px !important;
+        text-align: center !important;
+    }
+
+
+    .title{
+       position: absolute !important;
+       min-width: 272px !important;
+       height: 24px !important;
+       left: 38.5px !important;
+       font-size: 20px !important;
+       top: 136px !important;
+
+    }
+    .title-num{
+       font-size: 20px !important;
+       line-height: 24px !important;
+       letter-spacing: 3.375px !important;
+    }
+} 
+
+
+
+
+
+
+@media only screen and (max-width: 440px){
+    p{
+        font-size: 15px !important;
+        line-height: 25px !important;
+    }
+
+        
+    .hidden2{
+        display: none !important;
+    }
+
+    .current-section::after{
+      background-color: transparent !important;
+    }
+
+     .mob{
+        z-index: 7;
+        display: block !important;
+    }
+
+    .tab,
+    .desk{
+        display: none !important;
+    }
+
+   
+    .ham{
+        display: block !important;
+        z-index: 65 !important;
+        position: relative !important;
+    }
+
+    .close{
+        z-index: 66 !important;
+        transition: .5s !important;
+    }
+
+
+    .phone-utilities{
+        margin-left: 40px !important;
+    }
+
+     nav ul li{
+        margin-top: 32px !important;
+    }
+
+    nav ul li a .nav-item .num{
+        display: block !important;
+    }
+
+        
+.hidden2{
+    display: none !important;
+}
+
+
+
+} 

@@ -1,0 +1,156 @@
+/* ------------------- */
+/*      Reset          */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+
+/* set up the body */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* make images easier to work with */
+img,
+picture{
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*Importing main styles.css */
+@import "crew/crew.css";
+@import "z css files/destination.css";
+@import "z css files/tech.css";
+@import "z css files/home.css";
+
+/*Importing main queries.css */
+@import "CREW/queries.css";
+@import "TECHNOLOGY/queries.css";
+@import "DESTINATION/queries.css";
+@import "HOME/queries.css";
+
+@import "z css files/utility classes.css";
+@import "z css files/utility queries.css";
+@import "z css files/psudoes.css";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+
+/* 
+=========================================
+========== just some variables ============
+=========================================
+*/
+
+:root {
+    /* colors */
+    --clr-dark: hsl(230 35% 7%);
+    --clr-light: hsl(231 77% 90%);
+    --clr-white: hsl(0 0% 100%);
+    --clr-white-br: rgba(255, 255, 255, 0.247);
+    
+    /* font-sizes */
+    --fs-big-ass-fonts: 9.375rem;
+    --fs-planet: 6.25rem;
+    --fs-tech: 3.5rem;
+    --fs-crew-role: 2rem;
+    --fs-title: 1.75rem;
+    --fs-body-text: 1.125rem;
+    --fs-planet-name: 1rem;
+    --fs-bottom-info: 0.875rem;
+    
+    /* font-families */
+    --ff-headings: "Bellefair", serif;
+    --ff-title: "Barlow Condensed", sans-serif;
+    --ff-body: "Barlow", sans-serif;
+
+    --let-spce: 4.72px;
+
+    --screen-width: 400px;
+}
+
+
+
+/* 
+=========================================
+========== to erase the white ===========
+========== left over space ==============
+=========================================
+*/
+
+
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-400);
+  line-height: 1.5;
+  min-height: 100vh;
+  background-color: wheat;
+  z-index: -3687;
+}

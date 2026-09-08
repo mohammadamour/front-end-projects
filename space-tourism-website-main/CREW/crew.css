@@ -1,0 +1,150 @@
+@import "../important.css";
+@import "../z css files/utility queries.css";
+@import "../z css files/utility classes.css";
+@import "../z css files/psudoes.css";
+@import "queries.css";
+
+
+.crew-section{
+    background-image: 
+    url("../assets/crew/background-crew-desktop.jpg");
+    min-height: 150vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+
+body{
+    background-color: var(--clr-light);
+}
+
+
+.crew-title{
+    position: absolute;
+    width: 286px;
+    height: 34px;
+    left: 166.5px;
+    font-family: var(--ff-title);
+    font-size: var(--fs-title);
+    top: 212px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: var(--let-spce);
+    text-transform: uppercase;
+    color: var(--clr-white);
+
+}
+
+.crew-title .num{
+    font-weight: 700;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    color: var(--clr-white);
+}
+
+.default-role{
+    position: absolute;
+    width: 214px;
+    height: 37px;
+    left: 165.5px;
+    top: 400px;
+    font-family: var(--ff-headings);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-crew-role);
+    line-height: 37px;
+    text-transform: uppercase;
+    color: var(--clr-white);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.default-name{
+    position: absolute;
+    width: 488px;
+    height: 64px;
+    left: 165.5px;
+    top: 452px;
+    font-family: var(--ff-headings);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-tech);
+    line-height: 64px;
+    text-transform: uppercase;
+    color: var(--clr-white);
+}
+
+.default-desc{
+    position: absolute;
+    width: 444px;
+    height: 128px;
+    left: 165px;
+    top: 543px;
+    font-family: var(--ff-body);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-body-text);
+    line-height: 32px;
+    color: var(--clr-light);
+}
+
+
+.default-img{
+    position: absolute;
+    width: 568.07px;
+    height: 712px;
+    left: 734.93px;
+    top: 198px;
+}
+
+
+ .dots{
+   position: absolute;
+   width: 132px;
+   height: 15px;
+   left: 167px;
+   top: 791px;
+   display: flex;
+}
+
+
+.dot{
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+    cursor: pointer;
+    transition: .2s;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.dot:hover{
+    opacity: .5;
+} 
+
+.current-dot{
+    opacity: 1 !important;
+}
+
+
+.crew-data{
+  display: none;
+}
+
+
+
+.attribution{
+    position: absolute;
+    bottom: -45%;
+}
