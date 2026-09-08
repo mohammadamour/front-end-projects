@@ -1,0 +1,211 @@
+ :root{
+   --clr: hsl(0, 0%, 100%);
+   --clr: hsl(228, 12%, 48%);
+   --clr: hsl(212, 21%, 14%);
+   --clr: hsl(30, 38%, 92%);
+   --clr: hsl(158, 36%, 37%);
+ }
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+ 
+ body{
+   font-family: 'Red Hat Display', sans-serif;
+   font-size: 16px;
+   background-color: hsla(158, 83%, 40%, 0.3);
+ }
+
+ h1{
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: 900;
+  color:  hsl(223, 47%, 23%);
+;
+ }
+ 
+.main-text p{
+  padding: 15px 0;
+  line-height: 1.7;
+  letter-spacing: calc(normal + 0.5);
+  color: hsl(228, 12%, 48%);
+}
+
+ .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 23px;
+  background-color: white;
+  width: 390px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+ 
+ }
+
+
+ .content{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 3.43rem 3rem;
+ }
+/* i picked this color myself,'cause i couldn't find the right one one the template */
+ .order{
+  background-color:hsl(27, 100%, 98%);
+  padding: 10px;
+  border-radius: 15px; 
+
+}
+
+ .order *{
+  display: inline-block;
+ }
+
+
+.details{
+  font-weight: 700;
+  float: left;
+  padding-left: 20px;
+}
+
+.details::after{
+  content: '$59.99/year ';
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  display: block;
+  padding-top: 3px;
+}
+
+.blue{
+  color: hsl(245, 88%, 49%);
+  padding-top: 10px;
+}
+
+.blue a:hover{
+  color: hsl(245, 88%, 49%);
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.blue a:focus{
+  color: hsl(210, 100%, 0%);
+}
+
+ .music-icon{
+  height: 45px;
+  width: 45px;
+    float: left;
+ }
+
+ button{
+  border: none;
+ }
+
+
+ .btn-1 button{
+  background-color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  color: hsl(225, 100%, 94%);
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+ }
+
+ .btn-1{
+  padding-top: 20px;
+ }
+
+ .btn-1:hover{
+  opacity: 0.7;
+ }
+
+ .btn-1:focus{
+  opacity: 0.7;
+  cursor: pointer;
+ }
+
+ .btn-2 button:hover{
+  color: hsl(212, 21%, 14%);
+  cursor: pointer;
+ }
+
+.btn-2 button:focus{
+  color: hsl(212, 21%, 14%);
+  cursor: pointer;
+ }
+
+
+ .btn-2 button{
+  background-color: inherit;
+  color: hsl(224, 23%, 55%);
+  font-weight: 800;
+  letter-spacing: 0.8px;
+   display: grid;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   height: 59px;
+   cursor: pointer;
+ }
+
+ .desk-back,
+ .mob-back{
+  display: none;
+ }
+
+@media only screen and (min-width: 1200px){
+  
+  .desk-back{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -10;
+  width: 100%;
+  display: block;
+ }
+
+}
+
+@media only screen and (max-width: 450px){
+   .mob-back{
+     position: absolute;
+     top: 0;
+     right: 0;
+     left: 0;
+     z-index: -10;
+     width: 100%;
+     display: block;
+   }
+
+
+   .container{
+    /* position: absolute;
+    top: 15%; */
+    margin: 15% auto;
+   }
+
+
+}
+
+ .attribution { 
+   font-size: 11px; 
+   text-align: center; 
+   padding-top: 50px;
+}
+
+
+    .attribution a { 
+      color: hsl(223, 67%, 35%);
+      text-decoration: none; 
+   }

@@ -1,0 +1,209 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+    background-color: hsla(236, 65%, 50%, 0.184);
+}
+
+.container{
+    border-radius: 12px;
+    background-color: white;
+    height: 300px;
+    width: 800px;
+    color: hsl(214, 17%, 51%);
+    line-height: 1.5;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.right-side{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+
+.heading{
+    font-size: 21px;
+    color: black;
+    font-weight: 700;
+}
+
+.main-img{
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px 0 0 10px;
+}
+
+
+.bottom{
+    display: flex;
+     justify-content: space-between;
+}
+
+.personal-pic{
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+}
+
+.name{
+    color: black;
+    font-weight: 700;
+}
+
+.n{
+    display: flex;
+    flex-direction: column;
+}
+
+.n span{
+    margin-left: 6px;
+}
+
+.share-icon{
+   padding: 7px;
+   background-color: hsl(210, 46%, 95%);
+   border-radius: 50%;
+   cursor: pointer;
+   margin-top: 14px;
+   position: absolute;
+   right: 400px;
+   display: inline-block;
+}
+
+.icons{
+    position: relative;
+    bottom: 50px;
+    left: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(217, 19%, 35%);
+    padding: 20px;
+    border-radius: 8px;
+    letter-spacing: 2.5px;
+    height: 10px;
+    width: 180px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: hsl(214, 17%, 51%);
+    line-height: 1.5;
+}
+
+.icons p{
+    position: relative;
+    bottom: 15px;
+}
+
+.icon{
+   height: 19px;
+       cursor: pointer;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: absolute;
+    bottom: 100px; 
+}
+
+    
+.attribution a { 
+    color: hsla(206, 75%, 44%, 0.832); 
+    text-decoration: none;
+    transition: .3s;
+}
+
+.attribution a:hover{
+    color: hsl(220, 89%, 48%); 
+}
+
+@media only screen and (max-width: 450px){
+    
+    .container{
+        max-width: 350px;
+        min-height: 600px;
+    }
+    
+    .main-img{
+        width: 350px;
+        height: 250px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .heading{
+        width: 320px;
+        font-size: 19px;
+        color: hsl(217, 19%, 35%);
+    }
+
+    .main-text{
+        width: 256px;
+    }
+    
+    .wrapper{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .right-side{
+      padding: 20px 30px;
+    }
+
+    .bottom{
+        margin-top: 35px;
+    }
+
+    .share-icon{
+      position: relative;
+      top: 96px;
+      left: 260px;
+    }
+
+    .share{
+        position: absolute;
+        bottom: 70px;
+        z-index: 2;
+    }
+
+    .icons{
+        position: relative;
+        top: 45px;
+        left: -40px;
+        /* padding: 30px ; */
+        width: 133%;
+
+        height: 30px;
+        display: flex;
+        justify-content: flex-start;
+        border-radius: 0 0 8px 8px;
+        z-index: -1;
+    }
+
+    .icons p{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .icon{
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+
+
+    .attribution{
+        position: absolute;
+        bottom: 00px;
+    }
+}

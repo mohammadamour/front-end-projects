@@ -1,0 +1,210 @@
+/* things you will need in every project */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+}
+
+/* seperating the pic and the content in desktop screens */
+.container{
+    display: grid; 
+    grid-template-columns: 55% 45%;
+    height: 100vh;
+}
+
+
+/* patrick bateman pic in mobile */
+#sigma-phone{
+    display: none;
+}
+/* patrick bateman pic in desktop */
+.sigma{
+    height: 100%;
+    width: 90%;
+    display: inline-block;
+    justify-self: end;
+    order: 2;
+}
+
+.logo{
+    margin-top: 30px;
+    padding-bottom: 100px;
+}
+
+/* the pink background  */
+.bg-pattern{
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+/* the content or the paragraph on the left side  */
+.first-side{
+   padding: 0rem 14rem;
+   height: 80vh;
+}
+
+
+.content{
+    width: 400px;
+    padding-top: 40px;
+}
+
+h1{
+   font-size: 65px;
+   color: black;
+   font-weight: 600;
+   line-height: 1.3;
+   letter-spacing: 10px;
+   text-transform: uppercase;
+}
+
+/* the pink word (WE'RE) */
+span{
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+
+p{
+    color: hsl(0, 36%, 70%);
+    font-weight: 400;
+    padding: 20px 0;
+    line-height: 2;
+}
+
+.input-section{
+    padding-top: 17px;
+}
+
+/* just to position the submit button and the error icon */
+form{
+    position: relative;
+}
+
+input{
+    width: 100%;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 40px;
+    padding: 15px;
+    height: 50px;
+    outline: none;
+    background-color: transparent;
+}
+
+/* the submit button */
+.pink-box{
+    width: 15%;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 93%, 68%));
+    padding: 13px 50px; 
+    border-radius: 50px;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+/* i don't know why is this here */
+.pink-box:hover{
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%),  hsl(0, 93%, 68%));
+}
+
+/* the arrow iside the submit button */
+.pink-box img{
+    color: white;
+    height: 40%;
+}
+
+/* to make the error icon and the red message invisibale */
+/* when they are not necessery */
+.hidden{
+    display: none;
+}
+
+.error{
+    position: absolute;
+    top: 12px;
+    right: 110px;
+}
+
+.red-message{
+    color: hsl(0, 93%, 68%);
+    padding: 20px 15px;
+}
+
+/* the line that contains my website link and my name */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-right: 20px;
+}
+
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* just some media query to make it look good and to 
+replace the desktopn images with moblie image and other things */
+@media only screen and (max-width: 450px){
+    
+    .logo{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: -40px;
+    }
+
+    .container{
+        text-align: center;
+        grid-template-columns: 100%;
+    }
+    
+    .sigma{
+        display: none;
+    }
+
+    .first-side{
+        width: 100%;
+        padding: 0 2.5rem 0 1rem;
+        height: auto;
+    }
+
+    .pink-box{
+        padding: 14px 38px 14px 30px;
+    }
+
+    .bg-pattern{
+        display: none;
+    }
+    #sigma-phone{
+        display: block;
+        max-width: 450px;
+        position: relative;
+        right: 25px;
+        margin-bottom: 50px;
+    }
+
+    footer{
+     position: absolute;
+     top: 150%;
+     left: 15%;
+    }
+
+    .error{
+        right: 80px;
+    }
+
+    .red-message{
+        margin-right: 120px;
+    }
+}
