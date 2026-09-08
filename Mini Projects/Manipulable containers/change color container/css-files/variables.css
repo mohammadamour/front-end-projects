@@ -1,0 +1,152 @@
+.child-background-color1{
+    background-color: var(--clr-yellow);
+    font-size: 14px;
+}
+
+
+.child-background-color2{
+    background-color: var(--clr-orange);
+        font-size: 14px;
+
+}
+
+.child-background-color3{
+    background-color: var(--clr-red);
+        font-size: 14px;
+
+    
+}
+
+.child-background-color4{
+    background-color: blue;
+        font-size: 14px;
+
+}
+
+/* the section with text colors  */
+.child-text-color1{
+    color: var(--clr-white);
+}
+
+.child-text-color2{
+    color: var(--clr-gray);
+}
+
+.child-text-color3{
+    color: var(--clr-green);
+}
+
+.child-text-color4{
+    color: var(--clr--cyan);
+}
+
+.child-text-color5{
+    color: var(--clr-black);
+}
+
+.child-text-color6{
+    color: var(--clr-pink);
+}
+
+.child-text-color7{
+    color: var(--clr-purple)
+}
+
+.child-text-color8{
+    color: var(--clr-light-blue);
+}
+
+.text-color-container{
+    margin: 20px;
+}
+
+.text-color-container div{
+    margin-top: 10px;
+}
+
+/* font weights */
+.child-font-weight1{
+    font-weight: var(--fw-100);
+}
+
+.child-font-weight2{
+    font-weight: var(--fw-300);
+}
+
+.child-font-weight3{
+    font-weight: var(--fw-500);
+}
+
+.child-font-weight4{
+    font-weight: var(--fw-700);
+}
+
+.child-font-weight5{
+    font-weight: var(--fw-900);
+}
+
+/* the section with font familes */
+.child-font-family1{
+    font-family: var(--ff-Aboreto);
+    color: var(--clr-white);
+    margin: 5px;
+}
+
+.child-font-family2{
+    font-family: var(--ff-Damion);
+    color: var(--clr-white);
+    margin: 5px;
+}
+
+.child-font-family3{
+    font-family: var(--ff-Explora);
+    color: var(--clr-white);
+    margin: 5px;
+}
+
+.child-font-family4{
+    font-family: var(--ff-Josefin-Sans);
+    margin: 5px;
+    color: var(--clr-white);
+}
+
+.child-font-family5{
+    font-family: var(--ff-Kavoon);
+    color: var(--clr-white);
+    margin: 5px;
+}
+
+.child-font-family6{
+    font-family: var(--ff-Lexend-Deca);
+    color: var(--clr-white);
+    margin: 5px;
+}
+
+.child-font-family7{
+    font-family: var(--ff-Lobster);
+    color: var(--clr-white);
+    margin: 5px;
+}
+
+.child-font-family8{
+    font-family: var(--ff-fortnite);
+    color: var(--clr-white);
+    margin: 5px;
+}
+
+/* letter transforming  */
+.letter-transform1{
+    text-transform: uppercase;
+}
+
+.letter-transform2{
+    text-transform: lowercase;
+}
+
+.child-background-color:hover,
+.child-text-color:hover,
+.child-font-family:hover,
+.child-font-weight:hover,
+.letter-transform:hover{
+    cursor: pointer;
+}

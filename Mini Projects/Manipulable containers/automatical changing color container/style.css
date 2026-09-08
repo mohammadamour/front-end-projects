@@ -1,0 +1,215 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --clr1: orange;
+    --clr2: orange;
+    --clr3: orange;
+    --clr4: orange;
+    --clr5: orange;
+    --clr6: orange;
+    --clr7: orange;
+    --clr8: orange;
+    --clr9: orange;
+    --clr10: orange;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100px;
+    background-color: hsl(233, 47%, 7%);
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+li{
+    color: hsla(0, 0%, 100%, 0.592);
+    display: inline-block;
+    text-decoration: none;
+}
+
+li:hover{
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.change-color-container::after{
+    content: '';
+    background-color: rgb(0, 110, 255);
+    height: 3px;
+    width: 85%;
+    display: block;
+    margin-left: 10px;
+}
+
+.manipulatable-container::after{
+    content: '';
+    background-color: rgb(0, 110, 255);
+    height: 3px;
+    width: 85%;
+    display: block;
+    margin-left: 10px;
+}
+
+
+.container{
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    transition: 5s;
+}
+
+
+.anime10{
+    animation: ;
+}
+
+
+@keyframes anime{
+     10%{ background-color: var(--clr1) }
+     20%{ background-color: var(--clr2) }
+     30%{ background-color: var(--clr3) }
+     40%{ background-color: var(--clr4) }
+     50%{ background-color: var(--clr5) }
+     60%{ background-color: var(--clr6) }
+     70%{ background-color: var(--clr7) }
+     80%{ background-color: var(--clr8) }
+     90%{ background-color: var(--clr9) }
+    100%{ background-color: var(--clr10)}
+}
+
+
+button{
+    padding: 20px;
+    width: auto;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    background-color: hsl(120, 91%, 42%);
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+}
+
+.tutorial-button{
+    border-radius: 10px;
+    height: 30px;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.button{
+    transform: translate(-330px, -275px);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(120, 91%, 50%);
+}
+
+.input{
+    padding: 0.15rem;
+    /* margin: .75rem; */
+    width: 75px;
+    border: rgb(161, 137, 137);
+    display: inline-block;
+}
+
+input:hover{
+    transition: .5s;
+}
+
+.transition{
+    border: 2px solid black;
+    padding: 0.15rem;
+    margin: .75rem;
+    width: 75px;
+    border-radius: 47px;
+}
+
+.inputs{
+    display: grid;
+    grid-template-columns: .1fr .1fr .1fr .1fr;
+    grid-gap: .75rem;
+    position: relative;
+    right: 100px;
+}
+
+/* when clicking over the trantition input its border becomes bigger */
+.transition:focus{
+    border: 5px solid black;
+}
+
+.tutorial-text{
+    position: absolute;
+}
+
+.tutorial{
+    position: absolute;
+    top: 200px;
+    right: 150px;
+    display: inline-block;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 30px;
+    left: 27%;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media only screen and (max-width: 550px) {
+    body{
+        display: grid;
+        grid-template-columns: 20fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .container{
+        width: 250px;
+        height: 250px;
+        position: relative;
+        left: 80px;
+    }
+
+    .inputs{
+        display: grid;
+       grid-template-columns: .1fr .1fr .1fr .1fr;
+        grid-gap: .75rem;
+        position: absolute;
+        bottom: 100px;
+        left: 15%;
+    }
+
+
+}

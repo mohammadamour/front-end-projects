@@ -1,0 +1,326 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --clr-columns-hover: hsl(10, 80%, 74%);
+    --clr-columns: hsl(10, 79%, 65%);
+    --clr-main-column: hsl(186, 34%, 60%);
+
+    --clr-bg-box: hsl(25, 47%, 15%);
+    --clr-brown-dark: hsl(28, 10%, 53%);
+    --clr-text: hsl(28, 10%, 53%);
+    --clr-bg-card: hsl(33, 100%, 98%);
+    --clr-black: hsl(0, 0%, 0%);
+
+    --fs: 18px;
+}
+
+
+
+/* ==================================
+   ============= body ===============
+   ============= header =============
+   ===== both of the containers =====
+   ==================================
+   */
+
+
+
+
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--clr-bg-card);
+    font-size: var(--fs);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* the container that contains both containers */
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+/* the header container with kinda orange background */
+.toper-container{
+    border-radius: 14px;
+    width: 350px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--clr-columns);
+    margin: 10px 0;
+    box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+    -webkit-box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+}
+
+
+.balance{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: space-between;
+}
+
+.balance .num{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo{
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* *************************
+   ***** main container ****
+   ************************
+   that contains all the improtant stuffffff*/
+
+.main-container{
+    background-color: white;
+    border-radius: 14px;
+    padding: 15px;
+    width: 350px;
+    height: 315px;
+    box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+    -webkit-box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+}
+
+h1{
+    font-size: 20px;
+    color: var(--clr-black);
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+/* *************************
+   ****** the columns ******
+   *************************
+*/
+
+
+
+
+
+
+
+
+
+
+.columns-values{
+    display: flex;
+    justify-content: space-evenly;
+    margin:0 0 0 15px;
+    align-items: flex-end;
+}
+
+/* each column */
+.mon-column{
+    height: calc(17.45px * 1.6);
+}
+
+
+.tue-column{
+    height: calc(34.91px * 1.6);
+}
+
+.wed-column{
+    height: calc(52.36px * 1.6);
+    background-color: var(--clr-main-column) !important;
+}
+
+.thu-column{
+    height: calc(31.07px * 1.6);
+}
+
+.fri-column{
+    height: calc(23.39px * 1.6);
+}
+
+.sat-column{
+    height: calc(43.0px * 1.6);
+}
+
+.sun-column{
+    height: calc(25.48px * 1.6);
+}
+
+
+.column{
+    background-color: var(--clr-columns);
+    width: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    transform: scaleY(0);
+    transition: 1.5s;
+}
+
+.scale1{
+    transform: scaleY(1);
+}
+
+
+.box{
+    transform: scaleX(0);
+    cursor: pointer;
+    padding: 4px 8px;
+    background-color: var(--clr-bg-box);
+    border-radius: 3px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 4px;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+
+.day:hover .box{
+    transform: scaleX(1);
+}
+
+.day:hover .column{
+    background-color: var(--clr-columns-hover);
+}
+
+
+/* containers  that contain the column the box above it */
+.day{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.days::after{
+    content: '';
+    height: .1px;
+    background-color: var(--clr-text);
+    width: 320px;
+    position: absolute;
+    margin: 45px 0;
+    display: block;
+}
+
+
+.days{
+    display: flex;
+    justify-content: space-between;
+    color: var(--clr-text);
+    font-size: 11px;
+    margin: 0 0 0 1px;
+}
+
+.days p{
+    margin: 5px 6px 0 -10px;
+    display: flex;
+    justify-content: center;
+}
+.days p:first-child{
+    margin-left: -3px;
+}
+
+
+/* ===================
+   ===== footer ======
+   ======= of ========
+   ======== the ======
+   ====== main =======
+   ==== contianer ====
+   ====================*/
+
+
+
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    top: 35px;
+}
+
+.total,
+.last-mon{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+footer .num{
+    color: black;
+}
+
+.total .num{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.last-mon .num{
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+.total{
+    position: relative;
+    top: 10px;
+}
+
+footer .word{
+    color: var(--clr-text);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.attribution {
+    font-size: 18px; 
+    text-align: center; 
+    position: relative;
+    top: 100px;
+    left: 0px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: .5s;
+    color: rgba(137, 137, 137, 0.523);
+}
+.attribution a {
+    color: hsla(200, 74%, 45%, 0.726); 
+    text-decoration: none;
+    font-size: 20px; 
+    text-transform: uppercase;
+}
+
+.attribution a:hover{
+    color: hsl(200, 82%, 44%); 
+}

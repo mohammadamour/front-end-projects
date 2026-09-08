@@ -1,0 +1,61 @@
+@import "main.css";
+@import "variables.css";
+
+
+
+
+:root{
+    --center: center;
+
+    --ff-Aboreto: 'Aboreto', cursive;
+    --ff-Damion: 'Damion', cursive;
+    --ff-Explora: 'Explora', cursive;
+    --ff-Josefin-Sans: 'Josefin Sans', sans-serif;
+    --ff-Kavoon: 'Kavoon', cursive;
+    --ff-Lexend-Deca: 'Lexend Deca', sans-serif;
+    --ff-Lobster: 'Lobster', cursive;
+    --ff-fortnite: 'Luckiest Guy', cursive;
+    --ff-body: 'Inter', sans-serif;
+
+    --clr-yellow: hsl(51, 100%, 50%);
+    --clr-orange: hsl(39, 100%, 50%);
+    --clr-red: hsl(0, 100%, 50%);
+    --clr-blue: hsl(240, 100%, 50%);
+
+    /* text colors  */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-gray: hsl(217, 12%, 63%);
+    --clr-green: hsl(150, 100%, 66%);
+    --clr--cyan: hsl(193, 38%, 86%);
+    --clr-black: hsl(0, 0%, 0%);
+    --clr-pink: hsl(336, 100%, 50%);
+    --clr-purple: hsl(307, 100%, 50%);
+    --clr-light-blue: hsl(191, 100%, 50%);
+
+    /* font weights */
+    --fw-100: 100;
+    --fw-300: 300;
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+
+    /* letter casing  */
+    --letter-casing-capital: uppercase;
+    --letter-casing-lower: lowercase;
+    
+}
+
+*{
+    transition: .5s;
+}
+
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: var(--center);
+    justify-content: var(--center);
+    font-family: var(--ff-body);
+    transition: .5s;
+}

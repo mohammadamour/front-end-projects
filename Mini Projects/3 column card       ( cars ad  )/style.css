@@ -1,0 +1,131 @@
+:root{
+    --clr-orange: hsl(31, 77%, 52%);
+    --clr-blue: hsl(184, 100%, 22%);
+    --clr-dark-green: hsl(179, 100%, 13%);
+
+    --fs-body: 15px;
+    --ff-heading:  'Big Shoulders Display', cursive;
+    --ff-text: 'Lexend Deca', cursive;
+
+    --clr-text: hsla(0, 0%, 100%, 0.75);
+    --clr-white: hsl(0, 0%, 95%);
+}
+
+.attribution {
+    font-size: 11px;
+    position: absolute;
+    bottom: 2px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);    
+}
+
+
+body{
+    background-color: var(--clr-white);
+    font-size: 15px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 960px;
+    min-height: 500px;
+    margin: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+p {
+    color: var(--clr-text);
+    font-family: 'Lexend Deca';
+    font-size: var(--fs-body);
+    line-height: 1.65rem;
+    padding: 10px 2.7rem;
+}
+
+h1{
+   color: white;
+   text-transform: uppercase;
+   font-family: var(--ff-heading);
+   padding: 0px 2.7rem;
+   font-size: 2.3rem;
+}
+
+
+img{
+    padding: 2.6rem 2.7rem 10px;
+}
+
+button{
+    padding: 1rem 2.7rem 1rem;
+    border-radius: 35px;
+    border: 0;
+    margin-left: 2.7rem;
+    margin-top: 3rem;
+    font-family: var(--ff-text);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+button:hover{
+    border: 2px white solid;
+    background-color: inherit;
+    color: white;
+}
+
+.btn1{
+    color: var(--clr-orange);
+}
+
+.btn2{
+    color: var(--clr-blue);
+}
+
+.btn3{
+    color: var(--clr-dark-green);
+}
+
+
+.box1{
+    background-color: var(--clr-orange);
+}
+
+
+.box2{
+    background-color: var(--clr-blue);
+}
+
+.box3{
+    background-color: var(--clr-dark-green);
+}
+
+@media (max-width: 600px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .box{
+        height: 475px;
+    }
+
+
+    .container{
+        min-height: 1125px;
+        width: 375px;
+    }
+
+    .attribution{
+      position: absolute;
+      top: 1440px;
+      padding: 3rem;
+    }
+}

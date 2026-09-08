@@ -1,0 +1,165 @@
+:root{
+    --clr-main-bg: hsl(217, 54%, 11%);
+    --clr-sec-bg: hsl(216, 50%, 16%);
+    --clr-line: hsl(215, 32%, 27%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-ETH: hsl(178, 100%, 50%);
+    --clr-soft: hsl(215, 51%, 70%);
+
+    --fs-body: 18px;
+    --ff-body: 'Outfit', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: var(--clr-main-bg);
+    font-family: var(--ff-body);
+    height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container{
+    background-color: var(--clr-sec-bg);
+    border-radius: 12px;
+    max-width: 350px;
+    max-height: 600px;
+    margin: 0 auto;  
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper{
+    margin: 2rem 0.5rem;
+    padding: 20px;
+}
+
+a{
+    color: var(--clr-white);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 21px;
+    display: inline-block;
+    padding: 20px 0;
+}
+
+p{
+    color: var(--clr-soft);
+
+}
+
+hr{
+    border-color: hsl(215, 32%, 27%);
+    
+}
+
+img{
+    display: inline-block;
+}
+
+.images{
+    position: relative;
+}
+
+.main-img{
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.photo{
+   border: 2px solid #fff;
+   border-radius: 100%;
+   width: 30px;
+   height: 30px;
+   margin-top: 15px;
+}
+
+
+
+.eye{
+   position: absolute;
+   width: 50px;
+   top: 50%;
+   right: 50%;
+    transform: translate(50%, -50%);
+   display: block;
+}
+
+.main{
+    position: relative;
+}
+
+.images:hover .sec-img{
+    display: block;
+    border-radius: 12px;
+    height: 99%;
+}
+
+.sec-img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+}
+
+.eth, .time{
+    display: flex;
+    align-items: center;
+}
+
+.heading:hover{
+    color: var(--clr-ETH);
+}
+
+.time p{
+    color: var(--clr-soft);
+ 
+}
+
+.eth p{
+    color: var(--clr-ETH);  
+    padding-left: 8px;  
+}
+
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.name {
+    color: var(--clr-white);
+    font-size: 16px;
+}
+
+
+.time p{
+    padding-left: 8px;
+}
+
+.img-text{
+    padding-left: 10px;
+}
+
+.bottom{
+    display: flex;
+    padding-top: 10px;
+}
+
+.name:hover{
+    color: var(--clr-ETH);
+}
