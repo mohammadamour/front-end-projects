@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.container{
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 20px;
+  min-height: 305px;
+  width: 340px;
+}
+
+.wrapper{
+    padding: 30px;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    position: relative;
+    bottom: 20px;
+}
+
+.the-main-quote{
+   color:  hsl(216, 12%, 54%);
+   padding: 10px;
+
+}
+
+.marks{
+    font-weight: 900;
+}
+
+p{
+    margin: 20px;
+    color: hsl(216, 12%, 54%);
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+}
+
+/* the thin line  */
+.button-container::before{
+    content: '';
+    height: .09px;
+    border-radius: 20px;
+    width: 100%;
+    background-color: hsl(217, 12%, 63%);
+    display: block;
+    margin-bottom: 20px;
+}
+
+button{
+    position: relative;
+    top: 10px;
+    margin: 10px;
+    width: 40%;
+    padding: 10px;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+    background-color: hsl(25, 97%, 53%);
+    color:  hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(25, 100%, 50%);
+}
+
+.author{
+    color: hsl(216, 12%, 54%);
+    margin-right: 170px;
+    margin-bottom: 10px;
+}
+
+.num,
+.hash{
+    color: hsl(150, 100%, 66%);
+}

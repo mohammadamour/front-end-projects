@@ -1,0 +1,153 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    min-height: 100vh;
+    Font-size: 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    max-height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+        position: absolute;
+    top: 20%;
+    left: 15%;
+    max-width: 1070px;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:  hsl(244, 38%, 16%);
+
+}
+
+h1{
+    font-size: 2.15rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-container{
+    position: relative;
+} 
+
+.img-container::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: hsl(277, 94%, 19%);
+  width: 100%;
+  opacity: 0.4;
+} 
+
+.colored{
+    color: hsl(277, 64%, 61%);
+}
+
+.description{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 26px;
+
+}
+
+
+
+.text{
+    padding: 3.95rem;
+}
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+}
+
+.last-section{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4.5rem;
+}
+
+.bold{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%);
+}
+
+.features{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+}
+
+.component{
+    line-height: 30px;
+}
+@media only screen and (max-width: 475px) {
+    body{
+      text-align: center;
+    }
+
+    .wrapper{
+        grid-template-rows: 1fr;
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .last-section{
+      display: flex; 
+      flex-direction: column;
+    }
+
+   .img-container{
+      order: -1;
+   }
+
+   .attribution{
+    position: relative;
+    top: 1200px;
+    left: 30px;
+   }
+
+   .container{
+    position: absolute;
+    top: 20px;
+    max-width: 350px;
+   }
+}
+
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}

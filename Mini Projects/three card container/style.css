@@ -1,0 +1,152 @@
+/* the color and fonts needed to complete the project */
+:root{
+    --clr-text: hsl(218, 22%, 67%);
+    --clr-main-bg: hsl(204, 43%, 93%);
+    --clr-button: hsl(71, 73%, 54%);
+    --clr-bottom-containers: hsl(179, 62%, 43%); 
+    --clr-white: hsl(0, 0%, 100%);
+
+    --ff: 'Karla', sans-serif;
+}
+
+
+/* centering all the content in the body and give it the necessery styles */
+body{
+    font-size: 14px;
+    font-family: var(--ff);
+    background-color: var(--clr-main-bg);
+    display: grid;
+    place-content: center;
+}
+
+/* the contianer that holds all the content */
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 650px;
+    height: 500px;
+    padding-top: 100px;
+}
+ 
+
+/* the first contianer with the white background */
+.top-container{
+    padding: 40px;
+    background-color: var(--clr-white);
+    border-radius: 6px 6px 0px 0px;
+}
+
+.top-container-text{
+    color: var(--clr-text);
+    font-weight: 700;
+        line-height: 1.7;
+}
+
+h1{
+    color: var(--clr-bottom-containers);
+    font-size: 24px;
+    font-weight: 700;
+}
+ /* the green text bellow the h1 */
+.greened{
+    color: hsl(71, 73%, 54%);
+    font-size: 20px;
+    font-weight: 700
+}
+
+/* the two contianers in the bottom */
+.bottom-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--clr-bottom-containers);
+  border-radius: 0px 0px 6px 6px;
+  overflow: hidden;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/* the bottom left .container */
+.left{
+    padding: 30px;
+    background-color: var(--clr-bottom-containers);
+}
+
+/* the bottom right container,
+i used a different bacground color because i couldn't find
+ the color i wantedin the css style guide */
+.right{
+    padding: 30px;
+    background-blend-mode: 0.6;
+    background-color: hsla(179, 52%, 55%, 0.6);
+    color: var(--clr-main-bg);
+}
+
+
+
+h2{
+    font-size: 20px;
+    color:var(--clr-white);
+}
+
+
+/* 29 */
+.two-nine{
+    font-size: 35px;
+    color: var(--clr-white);
+}
+
+
+/* per month */
+.per-mon{
+    margin-left: 10px;
+    color: var(--clr-main-bg);
+    font-size: 14px;
+    position: relative;
+    bottom: 6px;
+
+}
+
+.text-above-button{
+  color: var(--clr-main-bg);
+  position: relative;
+  bottom: 15px;
+} 
+
+ /* the text that says "Full access for less than $1 a day" */
+button{
+    background-color: var(--clr-button);
+    color: var(--clr-white);
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+/* the .attribution that has my name, my website link, and front end mentor link */
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/* media query to make all the contianers stack on top of each other on mobile width */
+@media only screen and (max-width: 475px){
+  
+    .container{
+       max-width: 650px;
+       height: auto;
+    }
+    .bottom-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
