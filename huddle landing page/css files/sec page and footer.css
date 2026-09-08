@@ -1,0 +1,204 @@
+
+:root{
+    /* primary colors  */
+    --clr-pink: hsl(322, 100%, 66%);
+
+    /* netural colors  */
+    --clr-white: hsl(193, 100%, 96%);
+    --clr-headings: hsl(192, 100%, 9%);
+    --clr-text: hsl(208, 11%, 55%);
+
+    --ff-body: 'Open Sans', sans-serif;
+    --ff-headings: 'Poppins', sans-serif;
+    
+    --fw-bold: 700;
+    --fw-semi-bold: 600;
+    --fw-normal: 400;
+}
+
+
+
+
+
+
+.feature-section{
+    background-color: white;
+    padding: 150px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+    -webkit-box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+    border-radius: 12px;
+    margin: 50px 0;
+}
+
+.feature .text{
+    display: flex;
+    justify-content: center;
+    margin: auto 50px;
+    flex-direction: column;
+}
+
+.feature .text h3{
+    color: var(--clr-headings);
+    font-size: 30px;
+    font-weight: var(--fw-bold);
+    margin-bottom: 15px;
+}
+
+.feature .text p{
+    font-weight: var(--fw-normal);
+    color: var(--clr-text);
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.feature-section img{
+    height: 400px;
+    display: inline-block;
+}
+
+
+.call-to-action-box{
+    background-color: white;
+    padding: 55px 100px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    transform: translateY(70px);
+    box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+    -webkit-box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+    text-align: center;
+}
+
+
+.call-to-action-box h2{
+    font-weight: var(--fw-bold);
+    font-size: 30px;
+    color: var(--clr-headings);
+    margin-bottom: 30px;
+}
+
+.call-to-action-box button{
+    background-color: var(--clr-pink);
+    color: white;
+    cursor: pointer;
+    font-weight: var(--fw-bold);
+    padding: 25px 0px;
+    width: 280px;
+    border-radius: 40px;
+    box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+    -webkit-box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 4px 15px -8px rgba(0,0,0,1);
+    border: none;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.call-to-action-box button:hover{
+    background-color: var(--clr-pink-hover);
+}
+
+
+footer{
+    background-color: var(--clr-headings);
+    padding: 150px 90px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .list-items{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.first-section-footer .block{
+    margin: 15px 0;
+}
+
+li{
+    margin: 13px 100px;
+    /* list-style:armenian */
+}
+
+/* the ancher tags inside the LIs that are inside a ul inside a div with a class of list items */
+footer .list-items ul li a{
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+footer .list-items ul li a::after{
+    position: absolute;
+    transform: scaleX(0);
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: white;
+    content: '';
+    width: 100%;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+footer .list-items ul li a:hover::after{
+    transform: scaleX(1);
+}
+
+footer .logo{
+    filter: 
+    invert(99%) 
+    sepia(69%) 
+    saturate(0%) 
+    hue-rotate(129deg) 
+    brightness(210%) 
+    contrast(100%);
+
+    height: 40px;
+}
+
+.social{
+    margin-bottom: 70px;
+}
+
+.social img{
+    filter: 
+    invert(99%) 
+    sepia(69%) 
+    saturate(0%) 
+    hue-rotate(129deg) 
+    brightness(210%) 
+    contrast(100%);
+    
+    height: 40px;
+    border: 2px solid black;
+    padding: 8px;
+    border-radius: 50%;
+    margin: 0 7.5px;
+    cursor: pointer;
+}
+
+.social img:hover{
+    filter: invert(52%) 
+    sepia(23%) 
+    saturate(6066%)
+    hue-rotate(294deg) 
+    brightness(101%) 
+    contrast(101%);
+}
