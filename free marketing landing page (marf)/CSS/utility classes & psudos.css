@@ -1,0 +1,182 @@
+/* =============================
+========== attributions ========
+================================*/
+
+
+.mobs{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+
+.mob{
+    display: none;
+}
+
+
+
+.attribution {
+    font-size: 19px; 
+    font-weight: 500;
+    color: var(--clr-white);
+}
+
+.attribution span{
+    opacity: 0.4;
+}
+
+.attribution a {
+    color: var(--clr-yellow); 
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 1 !important;
+    font-weight: 700;
+    transition: .5s;
+    letter-spacing: 2.5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.attribution a::after{
+    position: absolute;
+    transform: scaleX(0);
+    left: 0;
+    bottom: -2.5px;
+    height: 2.5px;
+    background-color: var(--clr-head-bg);
+    content: '';
+    width: 100%;
+    transition: .4s;
+}
+
+.attribution a:hover::after{
+    transform: scaleX(1);
+}
+
+
+.attribution a:hover{
+    color: var(--clr-hover-yellow); 
+    letter-spacing: 3.4px;
+}
+
+.button{
+    background: var(--clr-yellow);
+    position: relative;
+    border-radius: 10px;
+    height: 70px;
+    cursor: pointer;
+    border: none;
+    padding: 0 36px;
+}
+
+.button p{
+    font-weight: var(--fw-700);
+    font-size: 19px;
+    text-transform: uppercase;
+    transition: .4s;
+    z-index: 5;
+    position: relative;
+}
+
+.button:hover p{
+    letter-spacing: 1.9px;
+    color: var(--clr-hover-black);
+}
+
+.third-sec button:hover p{
+    color: var(--clr-hover-white);
+}
+
+header button:hover p{
+    color: var(--clr-hover-white) !important;
+}
+
+
+.button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    background-color: var(--clr-hover-yellow);
+    height: 100%;
+    transition: .4s;
+    z-index: 3;
+    border-radius: 9px;
+}
+
+.third-sec button:hover::before{
+    background-color: var(--clr-hover-black);
+}
+
+
+.button:hover::before{
+    width: 100%;
+}
+
+
+
+.item-hover{
+    transition: .3s;
+    position: relative;
+    cursor: pointer;
+}
+
+.item-hover::before{
+    position: absolute;
+    top: 32px;
+    left: 0;
+    height: 2.3px;
+    background-color: var(--clr-yellow);
+    content: '';
+    transition: .3s;
+    width: 0%;
+}
+
+.item-hover:hover::before{
+    width: 100%;
+}
+
+
+
+
+
+
+.custom-button {
+    background: var(--clr-yellow);
+    position: relative;
+    border-radius: 10px;
+    height: 70px;
+    cursor: pointer;
+    border: none;
+    padding: 0 36px;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.custom-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: black;
+  transition: width 0.5s;
+  z-index: -1;
+}
+
+.custom-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.custom-button:hover::before {
+  width: 100%;
+}

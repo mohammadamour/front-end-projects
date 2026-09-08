@@ -1,0 +1,86 @@
+/* 
+=========================================
+========== omporting other css ===========
+========== files to this files ==============
+=========================================
+*/
+@import "header.css";
+@import "utility classes & psudos.css";
+@import "2th, 3th, 4th sections.css";
+@import "5th, 6th, 7th sections.css";
+@import "8th section, footer.css";
+@import "first queries.css";
+@import "sec queries.css";
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* 
+=========================================
+========== just some variables ============
+=========================================
+*/
+
+:root{
+
+    /* primary colors */
+    --clr-yellow: hsl(43, 85%, 76%);
+    --clr-black: hsl(60, 2%, 9%);
+    --clr-grey: hsl(0, 0%, 44%);
+    --clr-head-bg: hsl(35, 46%, 95%);
+
+    /* hover colors */
+    --clr-hover-yellow: hsl(43, 91%, 63%);
+    --clr-hover-black: hsl(60, 2%, 2%);
+    --clr-hover-white: hsl(35, 46%, 95%);
+    --clr-hover-grey: hsl(0, 2%, 33%);
+
+    /* netural colors */
+    --clr-white: hsl(0, 0%, 100%);
+
+    /* fonw weights */
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    --margin-left: 135px;
+}
+
+/* 
+=========================================
+========== to erase the white ===========
+========== left over space ==============
+=========================================
+*/
+
+
+html {
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  width: 100% !important;
+  height: 100%;
+  margin: 0;
+  font-family: 'Darker Grotesque', sans-serif;
+  padding: 0;
+  overflow-x: hidden !important;
+  background-color: var(--clr-head-bg);
+}
