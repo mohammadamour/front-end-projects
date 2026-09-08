@@ -1,0 +1,92 @@
+:root{
+    --clr-nav-cards-dark-mode: hsl(209, 23%, 22%);
+    --clr-dark-mode-bg: hsl(207, 26%, 17%);
+    --clr-light-mode-text: hsl(200, 15%, 8%);
+    --clr-value: hsla(0, 0%, 100%, 0.642);
+    --clr-light-bg: hsl(0, 0%, 98%);
+    --clr-dark-mode-text: hsl(0, 0%, 100%);
+    --clr-light-mode-cards: hsl(0, 84%, 45%);
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--clr-dark-mode-bg);
+}
+/* media query for the main page  */
+@media only screen and (max-width: 475px){
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    nav{
+        width: 100%;
+    }
+    .inputs{
+        /* display: grid;
+        grid-template-columns: 1fr; */
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .fa-magnifying-glass{
+        position: relative;
+        top: 64px;
+        left: 28px;
+    }
+
+    input{
+        margin: 30px 125px 30px 0px;
+        width: 110%;
+        position: relative;
+        right: 10px;
+    }
+
+    .submit-btn{
+        position: relative;
+        right: 38px;
+        padding: 0px 30px;
+        border-radius: 6px;
+    }
+
+    select{
+        margin: 20px 35px 20px 0px;
+        padding: 20px;
+    }
+    .apology h1{
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-size: 34px;
+    }
+
+    .apology span{
+        font-size: 21px;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+    .attribution{
+        letter-spacing: 1px;
+    }
+
+    .attribution a{
+        letter-spacing: 2px;
+    }
+}
+

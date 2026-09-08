@@ -1,0 +1,426 @@
+/* the next three selector are for the apologizing message when  
+the searched coutry is not found*/
+
+/* the container for the message  */
+.apology{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* the h3 of the message  */
+.apology-message{
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--clr-value);
+    text-align: center;
+    margin-top: 32%;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.apology span{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1px;
+    color:var(--clr-value);
+}
+
+nav{
+    background-color: var(--clr-nav-cards-dark-mode);
+    color: var(--clr-dark-mode-text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    width: calc(100vw - 15px);
+    position: fixed;
+    top: 0;
+    z-index: 20;
+}
+
+/* to align the dark mode and the icon in the right place  */
+nav .mood h3{
+    margin-top: 10px;
+}
+
+.refresh{
+    color: black;
+    font-weight: 900;
+    position: relative;
+    bottom: 15px;
+}
+
+/* the dark mode icon  */
+.fa-moon{
+    position: relative;
+    bottom: -25px;
+    right: 23px;
+}
+
+.fa-sun{
+    position: relative;
+    bottom: 15px;
+    right: 23px;
+    display: block;
+}
+
+.light-mode{
+    cursor: pointer;
+}
+
+/* the search bar, the submit button, the show all countries button  */
+/* and the options for continets */
+.inputs{
+    display: flex;
+    justify-content: space-between;
+    margin: 9rem 4rem;
+}
+
+/* the search bar  */
+input{
+    width: 40%;
+    padding: 20px 65px;
+    background-color: var(--clr-nav-cards-dark-mode);
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+/* the searching glass next the the search bar  */
+.fa-magnifying-glass{
+    position: absolute;
+    left: 100px;
+    padding-top: 20px;
+    display: block;
+    z-index: 3;
+    color: var(--clr-dark-mode-text);
+}
+
+/* the field with the options */
+.select{
+    width: 200px;
+    background-color: var(--clr-nav-cards-dark-mode);
+    color: var(--clr-value);
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    padding: 20px 16px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+.arrow-down{
+    border-right: 10px solid transparent; 
+    border-top: 10px solid transparent; /* 40px height (20+20) */
+    border-left: 10px solid var(--clr-dark-mode-text);
+    transform: rotate(-45deg);
+    position: relative;
+    left: 15px;
+}
+
+.continents{
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+
+.con-ul{
+    background-color: var(--clr-nav-cards-dark-mode);
+    padding: 10px 10px;
+    display: flex;
+    border-radius: 5px;
+    width: 200px;
+    flex-direction: column;
+    transition: .5s;
+    margin-top: 5px;
+    transform: scale(0, 0);
+
+}
+
+
+.con-ul li{ 
+    color: var(--clr-value);
+    font-weight: 300;
+    margin: 6px;
+    cursor: pointer;
+
+}
+
+.scale{
+    transition: .5s;
+    transform: scale(1, 1);
+}
+
+/* show all countries button and the submit button  */
+.nav-buttons{
+    display: flex;
+    margin-right: 400px;
+    padding: 0 20px;
+    justify-content: space-between
+}
+
+.submit-btn{
+    width: 100px;
+    margin: 0 10px 10px 10px;
+    padding: 8px;
+    font-weight: 300;
+    background-color: var(--clr-nav-cards-dark-mode);
+    color: var(--clr-dark-mode-text);
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.show-all-coutries{
+    width: 100px;
+    padding: 14px;
+    font-weight: 300;
+    margin: 0 10px;
+    background-color: var(--clr-nav-cards-dark-mode);
+    color: var(--clr-dark-mode-text);
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* the main fucking contianer  */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 3rem;
+    margin: 2rem 2.5rem;
+}
+
+/* the is a class that all card have it  */
+.country{
+    height: 325px;
+    width: 250px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: var(--clr-nav-cards-dark-mode);
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    color: var(--clr-dark-mode-text)
+}
+
+p{
+    color: var(--clr-dark-mode-text);
+    padding: 5px;
+}
+
+span{
+    color: var(--clr-value);
+    font-weight: 300;
+}
+
+h2{
+    font-size: 16px;
+    padding: 20px 5px 15px;
+    color: var(--clr-dark-mode-text);
+}
+
+.text{
+    padding-left: 20px;
+}
+
+img{
+    height: 170px;
+}
+
+/* when the user searchs for a country, i will use this class to 
+hide the other countries that are not important */
+.hidden{
+    display: none;
+}
+/* this class if for hiding an element but not eleminating it completely */
+.cant-see{
+    visibility: hidden;
+}
+
+/* the custom pages for each country */
+
+
+.custom-country{
+    height: 330px;
+    margin: 20px 40px 20px 100px;
+}
+
+/* the button in the custom pages */
+.back{
+    display: block;
+    margin: 60px 100px;
+    width: 100px;
+    padding: 8px;
+    font-weight: 300;
+    background-color: var(--clr-nav-cards-dark-mode);
+    color: var(--clr-dark-mode-text);
+    border: none;
+    border-radius: 6px;
+}
+
+.custom-container{
+    display: flex;
+}
+
+.info-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 90px;
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+.custom-heading{
+    margin-bottom: 300px;
+}
+
+.infos{
+    display: flex;
+}
+
+.sec-info{
+    margin-left: 100px;
+}
+
+
+.custom-container p{
+    padding: 8px;
+}
+
+.custom-heading{
+    position: absolute;
+    font-size: 26px;
+}
+
+
+.border-countries{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: .1rem;
+}
+
+.border-countries div a{
+    width: 100px;
+    padding: 8px;
+    font-weight: 300;
+    background-color: var(--clr-nav-cards-dark-mode);
+    color: var(--clr-dark-mode-text);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.border-countries div a:active{
+    width: 100px;
+    padding: 8px;
+    font-weight: 300;
+    background-color: var(--clr-nav-cards-dark-mode);
+    color: var(--clr-dark-mode-text);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.container-text{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 0 100px;
+}
+
+.container-text h2{
+    color: var(--clr-dark-mode-text);
+    margin-bottom: 10px;
+}
+
+.container-text p{
+    color: var(--clr-value);
+    max-width: 500px;
+    margin-bottom: 50px;
+}
+
+
+.attribution {
+    font-size: 16px; 
+    text-align: center; 
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    transition: .5s;
+    color: hsla(0, 0%, 54%, 0.523);
+    line-height: 2;
+}
+
+.attribution a {
+    color: hsla(200, 74%, 45%, 0.726); 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.attribution .att-link1::after{
+    position: absolute;
+    transform: scaleX(0);
+    left: 0;
+    bottom: -2.5px;
+    height: 2.5px;
+    background-color: white;
+    content: '';
+    width: 100%;
+    transition: .7s;
+}
+
+.attribution .att-link2::after{
+    position: absolute;
+    transform: scaleX(0);
+    left: 0;
+    bottom: -2.5px;
+    height: 2.5px;
+    background-color: white;
+    content: '';
+    width: 100%;
+    transition: .7s;
+}
+
+.attribution a:hover{
+    color: hsl(200, 82%, 44%); 
+}
+
+.attribution .att-link1:hover::after{
+    transform: scaleX(1);
+     
+}
+
+.attribution .att-link2:hover::after{
+    transform: scaleX(1);
+    
+}
+
+
+@media only screen and (min-width: 875px){
+
+    input{
+        height: 30% !important;
+    }
+
+    .submit-btn{
+        height: 30% !important;
+    }
+
+}
