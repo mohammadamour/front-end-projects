@@ -1,0 +1,96 @@
+@media only screen and (max-width: 475px){
+
+:root{
+
+    /* primary colors */
+    --clr-main: hsl(356, 100%, 66%);
+    --clr-hover-main: hsl(355, 100%, 74%);
+    --clr-sec-section: hsl(208, 49%, 24%);
+
+    /* netural colors */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-footer-text: hsl(240, 2%, 79%);
+    --clr-body: hsl(207, 13%, 34%);
+    --clr-footer-bg: hsl(240, 10%, 16%);
+
+    /* Gradient colors */
+    --clr-pale: hsl(13, 100%, 72%);
+    --clr-: hsl(353, 100%, 62%);
+
+    --clr-headings: hsl(237, 17%, 21%);
+    --clr-main-text: hsl(237, 23%, 32%);
+
+    /* font families */
+    --ff-body: 'Overpass', sans-serif;
+    --ff-headings: 'Ubuntu', sans-serif;
+
+    --margin-left: 0px !important;
+}
+
+body{
+    overflow-x: hidden !important;
+}
+
+.mob{
+    display: block !important;
+}
+
+.desk{
+    display: none !important;
+}
+
+.ham{
+    height: 100%;
+}
+
+.fourth-section .block-text{
+    margin-left: 0 !important;
+} 
+
+.nav-items .nav-title,
+.right-nav, .nav-items{
+    display: none;
+}
+
+.left-nav{
+    display: flex;
+    justify-content: space-between !important; 
+    align-items: center;
+}
+
+nav{
+    display: block !important;
+    padding: 4rem 2rem;
+}
+
+.phones{
+    transform: scale(0.28) !important;
+}
+
+header{
+    text-align: center;
+    justify-self: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--clr-main) !important; 
+}
+
+h1{
+    font-size: 40px !important;
+    font-weight: 400;
+    max-width: 365px;
+}
+
+.sub-heading{
+    max-width: 260px;
+}
+
+.first-bg-mob {
+    height: 227vh !important;
+    position: absolute !important;
+    top: -301px !important;
+    z-index: 3 !important;
+    left: -395px !important;
+}
+
+}

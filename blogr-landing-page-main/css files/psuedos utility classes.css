@@ -1,0 +1,185 @@
+/* =======================================
+========== navigation bar & header =======
+==========================================*/
+
+
+.nav-item:hover{
+    color: var(--clr-headings);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+
+.login:hover{
+    background-color: var(--clr-main);
+    letter-spacing: 2px;
+}
+
+
+
+.sign:hover{
+    background-color: var(--clr-hover-main);
+    letter-spacing: 2px;
+    color: var(--clr-white);
+}
+
+
+.start:hover{
+    background-color: var(--clr-main-2);
+    letter-spacing: 1.8px;
+    color: var(--clr-white);
+}
+
+.learn:hover{
+    letter-spacing: 2.5px;
+    background-color: var(--clr-white);
+    color: var(--clr-main);
+}
+
+
+
+
+
+/* ===============================
+========== utility classes =======
+==================================*/
+
+
+
+
+.rotated{
+    transform: rotate(180deg);
+    transition: transform 0.4s ease-in-out;
+}
+
+
+.nav-items-hovered ul{
+    transform: scale(1, 1) !important;   
+}
+
+
+.circles{
+    position: absolute;
+}
+
+
+
+.first-bg-desk,
+.first-bg-mob{
+    height: 461vh;
+    position: absolute;
+    top: -1436px;
+    z-index: 3;
+    left: -462px;
+}
+
+
+.text{
+    font-size: 1rem;
+    font-family: var(--ff-body);
+    font-weight: 500;
+    max-width: 500px;
+    color: var(--main-text);
+    line-height: 1.7;
+    margin-top: 1.9rem;
+}
+
+.heading{
+    color: var(--clr-headings);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+#hidden{
+    display: none !important;
+}
+
+.shrink{
+    transform: scaleY(0) !important;
+    transition: .5s !important;
+}
+
+
+/* =============================
+========== attributions ========
+================================*/
+
+
+
+.attribution .att-link2:hover::after{
+    transform: scaleX(1);
+    
+}
+
+
+.attribution .att-link1::after{
+    position: absolute;
+    transform: scaleX(0);
+    left: 0;
+    bottom: -2.5px;
+    height: 2.5px;
+    background-color: white;
+    content: '';
+    width: 100%;
+    transition: .7s;
+}
+
+.attribution .att-link2::after{
+    position: absolute;
+    transform: scaleX(0);
+    left: 0;
+    bottom: -2.5px;
+    height: 2.5px;
+    background-color: white;
+    content: '';
+    width: 100%;
+    transition: .7s;
+}
+
+.attribution a:hover{
+    color: hsl(200, 82%, 44%); 
+}
+
+.attribution .att-link1:hover::after{
+    transform: scaleX(1);
+     
+}
+
+.attribution .att-link2:hover::after{
+    transform: scaleX(1);
+    
+}
+
+
+
+
+/* =======================
+========== footer ========
+==========================*/
+
+
+
+
+.footer-group li a:hover{
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--clr-white);
+}
+
+.footer-group li a::after{
+    position: absolute;
+    top: 18px;
+    left: 0;
+    height: 2.5px;
+    background-color: var(--clr-footer-text);
+    content: '';
+    transform: scaleX(0);
+    transition: .3s;
+    width: 100%;
+}
+
+.footer-group li a:hover::after{
+    transform: scaleX(1);
+}

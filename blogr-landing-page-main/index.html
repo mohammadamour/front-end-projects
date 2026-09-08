@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Blogr]</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css files/important.css" />
+  </head>
+  <body>
+    <header>
+      <!-- ===============================
+           ========== navigation ========
+           =============================== -->
+
+      <nav>
+        <div class="left-nav">
+          <img src="images/logo.svg" alt="" class="logo" />
+
+          <img src="images/icon-close.svg" alt="" class="close mob" id="hidden">
+
+          <img src="images/icon-hamburger.svg" alt="" class="ham mob" />
+          <div
+            onmouseover="onmouseItems1()"
+            onmouseout="outmouseItems1()"
+            class="nav-items"
+          >
+            <div class="nav-title">
+              <p>
+                Product
+                <img
+                  src="images/icon-arrow-light.svg"
+                  alt=""
+                  class="arrow-desk desk arrow"
+                />
+                <img
+                  src="images/icon-arrow-dark.svg"
+                  alt=""
+                  class="arrow-mob mob arrow"
+                />
+              </p>
+            </div>
+            <ul>
+              <li class="nav-item"><a href=""></a>Overview</li>
+              <li class="nav-item"><a href=""></a>Pricing</li>
+              <li class="nav-item"><a href=""></a>Marketplace</li>
+              <li class="nav-item"><a href=""></a>Features</li>
+              <li class="nav-item"><a href=""></a>Integrations</li>
+            </ul>
+          </div>
+
+          <div
+            onmouseover="onmouseItems2()"
+            onmouseout="outmouseItems2()"
+            class="nav-items"
+          >
+            <div class="nav-title">
+              <p>
+                Company
+                <img
+                  src="images/icon-arrow-light.svg"
+                  alt=""
+                  class="arrow-desk desk arrow"
+                />
+                <img
+                  src="images/icon-arrow-dark.svg"
+                  alt=""
+                  class="arrow-mob mob arrow"
+                />
+              </p>
+            </div>
+            <ul>
+              <li class="nav-item"><a href="">About </a></li>
+              <li class="nav-item"><a href="">Team </a></li>
+              <li class="nav-item"><a href="">Blog </a></li>
+              <li class="nav-item"><a href="">Careers</a></li>
+            </ul>
+          </div>
+
+          <div
+            onmouseover="onmouseItems3()"
+            onmouseout="outmouseItems3()"
+            class="nav-items"
+          >
+            <div class="nav-title">
+              Connect
+              <img
+                src="images/icon-arrow-light.svg"
+                alt=""
+                class="arrow-desk desk arrow"
+              />
+              <img
+                src="images/icon-arrow-dark.svg"
+                alt=""
+                class="arrow-mob mob arrow"
+              />
+            </div>
+            <ul>
+              <li class="nav-item"><a href="">Contact </a></li>
+              <li class="nav-item"><a href="">Newsletter</a></li>
+              <li class="nav-item"><a href="">LinkedIn </a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="right-nav">
+          <button class="login">Login</button>
+          <button class="sign">Sign Up</button>
+        </div>
+      </nav>
+
+      <img
+        src="images/bg-pattern-intro-desktop.svg"
+        alt=""
+        class="first-bg-desk desk"
+      />
+      <img
+        src="images/bg-pattern-intro-mobile.svg"
+        alt=""
+        class="first-bg-mob mob"
+      />
+      <div class="header-info">
+        <h1>A modern publishing platform</h1>
+        <p class="sub-heading">
+          Grow your audience and build your online brand
+        </p>
+
+        <div class="call-to-action">
+          <button class="start">Start for Free</button>
+          <button class="learn">Learn More</button>
+        </div>
+      </div>
+    </header>
+
+    <!--   ===============================
+           ========== main ========
+           =============================== -->
+
+    <main>
+      <section class="sec-section">
+        <h2>Designed for the future</h2>
+
+        <div class="block-text">
+          <h4 class="heading">Introducing an extensible editor</h4>
+          <p class="text">
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </p>
+        </div>
+
+        <div class="block-text">
+          <h4 class="heading">Robust content management</h4>
+          <p class="text">
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow. With this functionality,
+            you’re in full control.
+          </p>
+        </div>
+
+        <img
+          class="first-pic-desk desk"
+          src="images/illustration-editor-desktop.svg"
+          alt="an illustration of an editor"
+        />
+
+        <img
+          src="images/illustration-editor-mobile.svg"
+          alt="an illustration of an editor"
+          class="first-pic-mob mob"
+        />
+      </section>
+
+      <section class="third-section">
+        <img
+          src="images/illustration-phones.svg"
+          alt="illustration of two phones"
+          class="phones"
+        />
+        <h4 class="heading">State of the Art Infrastructure</h4>
+        <p class="text">
+          With reliability and speed in mind,
+          worldwide data centers provide the backbone for ultra-fast
+          connectivity. This ensures your site will load instantly, no matter
+          where your readers are, keeping your site competitive.
+        </p>
+      </section>
+
+      <section class="fourth-section">
+        <img
+          src="images/illustration-laptop-desktop.svg"
+          alt=""
+          class="third-pic-desk desk"
+        />
+        <img
+          src="images/illustration-laptop-mobile.svg"
+          alt=""
+          class="third-pic-mob mob"
+        />
+
+        <div class="block-text">
+          <h4 class="heading">Free, open, simple</h4>
+          <p class="text">
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+        </div>
+
+        <div class="block-text">
+          <h4 class="heading">Powerful tooling</h4>
+          <p class="text">
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!--   ===============================
+           ========== footer ============
+           =============================== -->
+
+    <footer>
+      <div class="footer-items">
+        <img class="logo-footer" src="images/logo.svg" alt="">
+        <ul class="footer-group">
+            <li class="cata-name">Product</li>
+            <li><a href="">Overview    </a></li>   
+            <li><a href="">Pricing     </a></li>   
+            <li><a href="">Marketplace </a></li>   
+            <li><a href="">Features    </a></li>   
+            <li><a href="">Integrations</a></li>   
+        </ul>
+        <ul class="footer-group">
+            <li class="cata-name">Company</li>
+            <li><a href="">About  </a></li>
+            <li><a href="">Team   </a></li>
+            <li><a href="">Blog   </a></li>
+            <li><a href="">Careers</a></li>
+        </ul>
+        <ul class="footer-group">
+            <li class="cata-name">Connect</li>
+            <li><a href="">Contact   </a></li>
+            <li><a href="">Newsletter</a></li>
+            <li><a href="">LinkedIn  </a></li>
+        </ul>
+      </div>
+
+      <p class="attribution">
+        Challenge by
+        <a class="att-link1" href="https://www.frontendmentor.io?ref=challenge">
+          Frontend Mentor.</a
+        >
+        <br />
+        Coded by
+        <a
+          class="att-link2"
+          href="https://mohammadsvioan.github.io/my-updated-website/"
+        >
+          mohammad alteab.</a
+        >
+      </p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

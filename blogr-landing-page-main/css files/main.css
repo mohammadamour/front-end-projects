@@ -1,0 +1,158 @@
+
+/* ===============================
+========== second section ========
+==================================*/
+
+
+/* heading second setion */
+h2{
+    color: var(--clr-headings);
+    max-width: 600px;
+    margin: 0 auto 8.125rem auto;
+    font-size: 2.7rem;
+    font-weight: 500;
+    font-family: var(--ff-headings);
+}
+
+.sec-section{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.4);
+    overflow: hidden;
+    padding: 9rem 0 10.625rem var(--margin-left);
+}
+
+.sec-section .block-text{
+    margin-top: 2.4rem;
+}
+
+.first-pic-desk{
+    position: absolute;
+    right: 0;
+    transform: translateX(237px);
+    top: 106px;
+}
+
+
+/* ===============================
+========== third section ========
+==================================*/
+
+
+.third-section{
+    background-color: hsl(237, 17%, 21%);
+    background-image: url("../images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position-x: -14rem;
+    background-position-y: -34rem;
+    margin-top: 8rem;
+    border-radius: 0 7rem 0 7rem;
+    height: 25rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.phones{
+    position: absolute;
+    left: var(--margin-left);
+    top: -60px;
+    bottom: 0;
+}
+
+.third-section .heading,
+.third-section .text{
+    color: var(--clr-white) !important;
+    margin-left: 48rem;
+}
+
+.third-section .heading{
+    font-size: 2.5rem;
+}
+
+
+
+/* ===============================
+========== fourth section ========
+==================================*/
+
+
+
+.fourth-section{
+    position: relative;
+    padding: 14rem var(--margin-left) 15rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.third-pic-desk{
+    position: absolute;
+    left: 0;
+    transform: translateX(-280px);
+    top: 106px;
+}
+
+.fourth-section .block-text{
+    margin-left: 49rem;
+    margin-top: 4.6rem;
+}
+
+.fourth-section .block-text .text{
+    margin-top: 1rem !important;
+} 
+
+
+/* ========================
+========== footer =========
+===========================*/
+
+
+
+footer{
+    background-color: var(--clr-footer-bg);
+    border-radius: 0 5rem 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.footer-items{
+    padding: 4rem 2rem 6rem 10rem;
+    display: flex;
+}
+
+.footer-group{
+    margin-left: 12rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-group li{
+    margin: .7rem 0;
+}
+
+.footer-group li a{
+    color: var(--clr-footer-text);
+    position: relative;
+    transition: .3s;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+.cata-name{
+    color: var(--clr-white);
+    font-weight: 600;
+
+}
+
+.attribution{
+    position: absolute;
+    margin: 1rem auto 3rem auto;
+    bottom: 0;
+}
+
+.logo-footer{
+    height: 100%;
+}
